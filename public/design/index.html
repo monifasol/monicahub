@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Monica Saiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="/design/css/monifolio.css" defer>
+    <link rel="stylesheet" type="text/css" href="/design/fonts/font-face.css" defer>
+    <script defer type="module" src='/design/javascript/index.mjs'></script>
+
+  </head>
+
+  <body>
+
+    <div id="loader" class="loading">
+      <div class="loader-container">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <p>Loading . . .</p>
+      </div>
+    </div>
+
+    
+    <div id="loadedContent">
+
+      <div class="butterfly">
+        <img src="img/canvas/butterfly2.png">
+      </div>
+
+      <div class="progress-bar"></div>
+
+      <div class="arrow-up">
+        <img class="button-go-down-img" src="img/button-go-down.png" />
+      </div>
+
+      <div data-block-to-animate="false">
+          <div class="side-bar" data-move-to-center="from-left" delay="2">
+
+              <div class="social-media">
+                <a class="icon medium" href="http://www.medium.com/@monifasol" target="_blank">
+                  <img src="img/medium.png"/>
+                  <div class="tooltip medium">Writing in Medium</div>
+                </a>
+
+                <a class="icon instagram" href="https://www.instagram.com/moni.ca.art/" target="_blank">
+                  <img src="img/insta.png"/>
+                  <div class="tooltip instagram">Instagram</div>
+                </a>
+              </div>
+            
+          </div>
+      </div>
+
+      <header>
+
+        <!-- menu Desktop -->
+        <nav class="menu-desktop" data-block-to-animate="false">
+          <a href="index.html" class="a-button" data-move-to-center="from-left" delay="2">
+            <div class="head-facing-right">
+            </div>
+          </a>
+          <div class="wrapper-items-menu" data-move-to-center="from-right" delay="2">
+            <span class="item-menu" data-target="sectionHello" id="menuHello">Hello!</span>
+            <span class="item-menu" data-target="sectionProjects">Projects UX/UI Design</span>
+            <span class="item-menu" data-target="sectionDesign">Illustration</span>
+            <span class="item-menu" data-target="sectionWriting">Writing</span>
+          </div>
+        </nav>
+      </header>
+
+      <!-- DELETE FROM CSS: sectionWeb, sectionUx -->
+
+      <main class="wrapper-full-content">
+
+        <div class="elements-top">
+
+          <div class="name over-the-fold" data-top-elements-animate="false">
+
+            <div class="letter" data-animate-from-top delay="1">
+              <img src="img/the-c.png" alt="the C, from create" />
+            </div>
+            <div class="letter" data-animate-from-top delay="2">
+              <img src="img/the-r.png" alt="the R, from create" />
+            </div>
+            <div class="letter" data-animate-from-top delay="3">
+              <img src="img/the-e.png" alt="the E, from create" />
+            </div>
+            <div class="letter" data-animate-from-top delay="2">
+              <img src="img/the-a.png" alt="the A, from create" />
+            </div>
+            <div class="letter high" data-animate-from-top delay="2">
+              <img src="img/the-t.png" alt="the T, from create" />
+            </div>
+            <div class="letter" data-animate-from-top delay="3">
+              <img src="img/the-e.png" alt="the E, from create" />
+            </div>
+          </div>
+
+          <div class="motto over-the-fold" data-top-elements-animate="false">
+            <span class="motto-bg-flower" data-move-to-center="from-left" delay="1"></span>
+            <div class="motto-text" data-animate-from-bottom delay="1">
+                "Being different is just another way of being."
+            </div>
+            <span class="motto-bg-flower" data-move-to-center="from-right" delay="1"></span>
+          </div>
+
+        </div>
+
+        <svg class="wave-rosa after-hello" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 782 273">
+          <defs>
+            <!-- the x1, x2, y1, y2 are defined to make the gradient to have a
+            vertical orientation, but I don't fully understand how.-->
+            <linearGradient id="waveGradientRosa" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#FFEFF2" />
+              <stop offset="75%" stop-color="#FFF9FA" />
+              <stop offset="100%" stop-color="#FFFFFF" />
+            </linearGradient>
+        </defs>
+        <path d="M0 26c104 37 201 56 291 56 135 0 155-39 273-66C643-2 716-5 782 9v264H0V26z"/>
+        </svg>
+
+
+
+        <section class="sectionHello" id="sectionHello" data-block-to-animate="false">
+
+          <h2>Hello!</h2>
+
+          <p>
+            Creating is simply part of how I move through the world.
+            Almost every day I make something: a drawing, a small interface, a song, a recipe, an idea, a plan.
+            It is my way of expressing myself, connecting with others, learning, making sense of things, having fun, and being alive. 
+          </p>
+
+          <p>
+            After nearly two decades working in technology, design has always been the thread running through everything I do.
+            I enjoy exploring interfaces, illustration, writing, music production, accessibility, and the small details that 
+            make digital experiences feel thoughtful and human.
+          </p>
+
+          <p>
+            This space gathers some of those visual explorations.<br/>
+            Pieces where curiosity, craft, and play meet.
+          </p>
+
+        </section> <!-- END HELLO -->
+      
+
+        <svg class="wave-web" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 782 273">
+          <defs>
+            <!-- the x1, x2, y1, y2 are defined to make the gradient to have a
+            vertical orientation, but I don't fully understand how.-->
+            <linearGradient id="waveGradientGreen" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#DEFDF6" />
+              <stop offset="100%" stop-color="#FFFFFF" />
+            </linearGradient>
+        </defs>
+        <path d="M0 26c104 37 201 56 291 56 135 0 155-39 273-66C643-2 716-5 782 9v264H0V26z"/>
+        </svg>
+
+        <!-- <svg class="wave-rosa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 782 273">
+          <defs>
+            <linearGradient id="waveGradientRosa" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#FFEFF2" />
+              <stop offset="75%" stop-color="#FFF9FA" />
+              <stop offset="100%" stop-color="#FFFFFF" />
+            </linearGradient>
+        </defs>
+        <path d="M0 26c104 37 201 56 291 56 135 0 155-39 273-66C643-2 716-5 782 9v264H0V26z"/>
+        </svg> -->
+
+
+        <!-- START UX/UI DESIGN BLOCK. -->
+
+        <section class="sectionProjects"  id="sectionProjects">
+
+          <div data-block-to-animate="false">
+            <h2 data-animate-from-top>Projects UX/UI Design</h2>
+
+            <div class="section-description ux" data-move-to-center="from-left">
+              <p class="title-project">UX Design, Design Thinking, Case Studies, UI Design</p>
+              <p>
+                Empathize, Define, Ideate, Prototype, Test. Repeat!
+                Design Thinking tackles every problem from the point of view of a designer, 
+                with a user-centered approach.
+                <br/>
+                Interviews, surveys, user research methods,
+                assumptions, validations, Personas, problem statements.
+                Moodboards, style tiles, design systems, UI design for mobile apps and desktop. 
+                Interactive prototypes with Marvel or Invision and microinteractions with Principle.
+              </p>
+            </div>
+          </div>
+
+          <div class="quotes" data-block-to-animate="false">
+            <div class="quote" data-move-to-center="from-right">
+              <blockquote>
+                Perfection is achieved not when there is nothing more to add, but when there is nothing left to take away.
+              </blockquote>
+              <span class="quote-author">— Antoine de Saint-Exupéry</span>
+            </div>
+
+            <div class="quote" data-move-to-center="from-left">
+              <blockquote>
+                A user interface is like a joke. If you have to explain it, it's not that good.
+              </blockquote>
+              <span class="quote-author">— Martin LeBlanc</span>
+            </div>
+          </div>
+
+          <!-- START MES AMIS -->
+
+          <div data-block-to-animate="false">
+            <h2 data-move-to-center="from-left" delay="1">UI Design of an app for children</h2>
+          </div>
+            
+          <div class="project-wrapper" data-block-to-animate="false">
+
+            <h3 class="project-title" data-move-to-center="from-right">
+              Project: Mes Amis <small>["my friends"]</small>
+              <span class="project-title-summary">
+                Mes Amis: UX/UI Design for a language mobile app for kids.
+              </span>
+            </h3>
+
+            <div class="project-description" data-move-to-center="from-right">
+              <img class="logo" src="/design/img/design/mesamis-logo.png" />
+
+              <div class="project-text">
+                <p>Save animals while learning a language!</p>
+                <p>
+                  The project started with just an idea and a blank paper: 
+                  "Design of an app for children to learn a new language while having fun."
+                  After a UX research, interviews, and user and market research, 
+                  these are the high fidelity design screens for the mobile app for kids. 
+                </p>
+                <p>
+                  For the complete Case Study, interactive prototype, full set of screens,
+                  and the whole UX and UI process, visit this
+                  <a target="_blank" href="https://bootcamp.uxdesign.cc/case-study-designing-a-language-app-for-kids-1f2908430211">
+                    Medium article
+                  </a>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-showcase-design" data-block-to-animate="false">
+            <h3 class="text change-order" data-move-to-center="from-left">Style tiles</h3>
+            <img src="/design/img/design/mesamis-style-tiles.png" data-move-to-center="from-right" />
+          </div>
+
+          <div class="project-showcase-design" data-block-to-animate="false">
+            <h3 class="text" data-move-to-center="from-left">
+              Final screens<span>(short sample)</span>
+            </h3>
+            <img src="/design/img/design/mes-amis-group-screens.png" data-move-to-center="from-right" />
+          </div>
+
+          <a class="a-button" target="_blank" href="https://bootcamp.uxdesign.cc/case-study-designing-a-language-app-for-kids-1f2908430211">
+            <div class="project-button">Read Case Study</div>
+          </a>
+          <!-- End MES AMIS -->
+
+
+          <img class="separator" src="/design/img/canvas/separator.png"/>
+
+          <div class="sectionWeb" id="sectionWeb">
+
+            <div data-block-to-animate="false">
+              <h2 data-animate-from-top>An Online Game
+                <span class="sub-h2">(Vanilla Javascript (ES6), HTML5, CSS3, animations)</span>
+              </h2>
+            </div>
+
+            <div data-block-to-animate="false">
+
+              <div class="project" data-animate-from-top>
+                <p class="title-project">Save Piggy from the Butcher! </p>
+                
+                <p>              
+                  Game for the browser to train DOM manipulation, Javascript classes and objects, 
+                  developed in HTML5, CSS3 animations, and Vanilla Javascript (ES6).
+                  The game consists in saving the pig from the butcher. Dodge the knives thrown from the sky, 
+                  while collecting fruits from the field on his way.
+                </p>
+              </div>
+
+              <div class="showcase web piggy">
+                  <img src="/design/img/showcase/piggy1.png" data-move-to-center="from-left"/>
+                  <img src="/design/img/showcase/piggy2.png" data-move-to-center="from-right"/>
+                  <img src="/design/img/showcase/piggy3.png" data-animate-from-bottom />
+                  <img src="/design/img/showcase/piggy4.png" data-animate-from-bottom />
+              </div>
+            </div> <!-- end block to animate -->
+          </div>
+
+
+          <img class="separator" src="/design/img/canvas/separator.png"/>
+
+
+          <div data-block-to-animate="false">
+            <h3 class="sub-title" data-animate-from-bottom delay="1">Writing about it all: UX Articles and Case Studies</h3>
+
+            <p class="title-explanation" data-animate-from-bottom delay="2">
+              These below are my favorite case studies and articles about anything related to UX.
+            </p>
+          </div>
+
+          <div class="posts">
+
+            <a class="post a-button" data-block-to-animate="false" href="https://medium.com/design-bootcamp/sketchnoting-is-for-you-even-if-you-cant-draw-3818f8bb84ca?sk=8f8c20ecfa4b316af1f89b337557fb31" target="_blank">
+              <div class="img-wrapper" data-animate-from-bottom delay="1">
+                <img src="/design/img/articles/prework-1.png"/>
+              </div>
+
+              <div class="text-wrapper">
+                <p class="post-title" data-animate-from-bottom delay="1">
+                  Sketchnoting is for you, even if you can't draw
+                </p>
+                <p class="post-subtitle" data-animate-from-bottom delay="1">
+                  Sketchnoting is about capturing ideas, not about creating a piece of art!
+                </p>
+              </div>
+            </a>
+
+            <a class="post a-button" data-block-to-animate="false" href="https://medium.muz.li/from-the-eyes-of-a-backpacker-traveler-a-ux-case-study-d6fa4fac7377?source=friends_link&sk=2fc6356a60b7cff070e5ac2feae9921f" target="_blank">
+              <div class="img-wrapper" data-animate-from-bottom delay="1">
+                <img src="/design/img/articles/prework-6.jpg"/>
+              </div>
+
+              <div class="text-wrapper">
+                <p class="post-title" data-animate-from-bottom delay="1">
+                  From the Eyes of a Backpacker Traveler — a UX Case Study
+                </p>
+                <p class="post-subtitle" data-animate-from-bottom delay="1">
+                  I combined my passion for traveling with my early steps as a UX/UI Designer
+                  to spot UX improvement areas in a traveling app
+                </p>
+              </div>
+            </a>
+
+            <a class="post a-button" data-block-to-animate="false" href="https://medium.com/design-bootcamp/designing-a-dream-option-for-our-pets-da5894bc16f9?source=friends_link&sk=5cf36b362cb3b115cf5f80a7e66919d6" target="_blank">
+
+              <div class="img-wrapper" data-animate-from-bottom delay="1">
+                <img src="/design/img/articles/blablapet.png"/>
+              </div>
+
+              <div class="text-wrapper">
+                <p class="post-title" data-animate-from-bottom delay="1">
+                  Designing a Dream Option for Our Pets — Blablapet
+                </p>
+                <p class="post-subtitle" data-animate-from-bottom delay="1">
+                  The idea of a new feature so that users can reserve seats for their pets and travel with or without them.
+                </p>
+              </div>
+            </a>
+
+            <a class="post a-button" data-block-to-animate="false" href="https://medium.muz.li/this-is-what-happens-when-you-mix-jamon-with-ux-design-831f74b34cf0?source=friends_link&sk=903eddf6f793ee6467aa3d6f3b308cd5" target="_blank">
+              <div class="img-wrapper" data-animate-from-bottom delay="1">
+                <img src="/design/img/articles/hams.jpg"/>
+              </div>
+
+              <div class="text-wrapper">
+                <p class="post-title" data-animate-from-bottom delay="1">
+                  Here is What Happens When You Mix Jamón with UX Design
+                </p>
+                <p class="post-subtitle" data-animate-from-bottom delay="1">
+                  The Jamometre, a yummy Case Study
+                </p>
+              </div>
+            </a>
+
+            <a class="post a-button" data-block-to-animate="false" href="https://medium.com/design-bootcamp/case-study-designing-a-language-app-for-kids-1f2908430211?sk=e0af370fa4383454fa6894a3129d029a" target="_blank">
+
+              <div class="img-wrapper" data-animate-from-bottom delay="1">
+                <img src="/design/img/articles/mesamis.jpg"/>
+              </div>
+
+              <div class="text-wrapper">
+                <p class="post-title" data-animate-from-bottom delay="1">
+                  Case study: Designing a language app for kids
+                </p>
+                <p class="post-subtitle" data-animate-from-bottom delay="1">
+                  From one initial idea to a mobile app's high fidelity design prototype for children.
+                </p>
+              </div>
+            </a>
+
+            <a class="post a-button" data-block-to-animate="false" href="https://uxdesign.cc/my-first-week-back-to-school-at-over-my-thirties-2bc873c82cdd?source=friends_link&sk=87e77f15a6557817a8e89a8a9baef103" target="_blank">
+              <div class="img-wrapper" data-animate-from-bottom delay="1">
+                <img src="/design/img/articles/back-to-school.png"/>
+              </div>
+
+              <div class="text-wrapper">
+                <p class="post-title" data-animate-from-bottom delay="1">
+                  First Week Back to School in My Thirties
+                </p>
+                <p class="post-subtitle" data-animate-from-bottom delay="1">
+                  The first five days at a UI/UX Design school was a life-changing experience. Here is my very personal side of the story.
+                </p>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- END UX BLOCK. CASE STUDIES. -->
+
+
+        <!-- START DESIGN BLOCK -->
+
+        <svg class="wave-design" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 782 273">
+          <defs>
+            <!-- the x1, x2, y1, y2 are defined to make the gradient to have a
+            vertical orientation, but I don't fully understand how.-->
+            <linearGradient id="waveGradientOrange" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#FFF0E7" />
+              <stop offset="100%" stop-color="#FFFFFF" />
+            </linearGradient>
+        </defs>
+        <path d="M0 26c104 37 201 56 291 56 135 0 155-39 273-66C643-2 716-5 782 9v264H0V26z"/>
+        </svg>
+
+
+        <section class="sectionDesign" id="sectionDesign">
+
+            <!-- START ILLUSTRATION  -->
+            <div data-block-to-animate="false">
+
+              <h2 data-animate-from-top>Illustration · Vectorial design</h2>
+
+              <div class="section-description illustration" data-move-to-center="from-left">
+                <p class="title-project">Keen on childrens' style and cartoons.</p>
+                
+                <p>
+                  In my spare time, I like to design - anything! 
+                  Icons for apps or websites, logos, illustrations.
+                  Anything that can be drawn by hand can also be vectorized and used in our designs.
+                  <br/>I specially enjoy joining drawing challenges and sharing my growing process in this 
+                  <a href="http://www.instagram.com/moni.ca.art" target="_blank">Instagram account</a> dedicated to it. 
+                  There's an amazing and supportive artists community out there!
+                </p>
+              </div>
+            </div>
+
+            <div data-block-to-animate="false">
+              <div class="illustration-feed-instagram">
+                <a data-animate-from-bottom delay="1" class="wrapper-illus a-button" href="http://www.instagram.com/p/CVI-3vrA_V4/" target="_blank">
+                  <img src="img/design/monicart1.png" alt="moni.ca.art post www.instagram.com/p/CVI-3vrA_V4" />
+                </a>
+                <a data-animate-from-bottom delay="2" class="wrapper-illus a-button" href="https://www.instagram.com/p/CU7LBmCANgR/" target="_blank">
+                  <img src="img/design/monicart2.png" alt="moni.ca.art post www.instagram.com/p/CU7LBmCANgR" />
+                </a>
+                <a data-animate-from-bottom delay="3" class="wrapper-illus a-button" href="https://www.instagram.com/p/CPjGxRXhHzE/" target="_blank">
+                  <img src="img/design/monicart3.png" alt="moni.ca.art post www.instagram.com/p/CPjGxRXhHzE" />
+                </a>
+
+                <a data-animate-from-bottom delay="1" class="wrapper-illus a-button" href="https://www.instagram.com/p/COceKZ4hXI9/" target="_blank">
+                  <img src="img/design/monicart4.png" alt="moni.ca.art post www.instagram.com/p/COceKZ4hXI9" />
+                </a>
+                <a data-animate-from-bottom delay="2" class="wrapper-illus a-button" href="https://www.instagram.com/p/COICzjiBLmF/" target="_blank">
+                  <img src="img/design/monicart5.png" alt="moni.ca.art post www.instagram.com/p/COICzjiBLmF" />
+                </a>
+                <a data-animate-from-bottom delay="3" class="wrapper-illus a-button" href="https://www.instagram.com/p/CNyb_35BgXx/" target="_blank">
+                  <img src="img/design/monicart6.png" alt="moni.ca.art post www.instagram.com/p/CNyb_35BgXx" />
+                </a>
+
+                <a data-animate-from-bottom delay="1" class="wrapper-illus a-button" href="https://www.instagram.com/p/CPSyJwuB1cb/" target="_blank">
+                  <img src="img/design/monicart7.png" alt="moni.ca.art post www.instagram.com/p/CPSyJwuB1cb" />
+                </a>
+                <a data-animate-from-bottom delay="2" class="wrapper-illus a-button" href="https://www.instagram.com/p/COpWBdBhx-L/" target="_blank">
+                  <img src="img/design/monicart8.png" alt="moni.ca.art post www.instagram.com/p/COpWBdBhx-L" />
+                </a>
+                <a data-animate-from-bottom delay="3" class="wrapper-illus a-button" href="https://www.instagram.com/p/CO0HOqghKcw/" target="_blank">
+                  <img src="img/design/monicart9.png" alt="moni.ca.art post www.instagram.com/p/CO0HOqghKcw" />
+                </a>
+              </div>
+            </div>
+
+            <a class="a-button" target="_blank" href="http://www.instagram.com/moni.ca.art">
+              <div class="project-button">See full Instagram feed!</div>
+            </a>
+
+            <!-- END ILLUSTRATION -->
+        
+        </section>
+
+        <img class="separator" src="/design/img/canvas/separator.png"/>
+
+        <svg class="wave-rosa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 782 273">
+          <defs>
+            <linearGradient id="waveGradientRosa" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#FFEFF2" />
+              <stop offset="75%" stop-color="#FFF9FA" />
+              <stop offset="100%" stop-color="#FFFFFF" />
+            </linearGradient>
+        </defs>
+        <path d="M0 26c104 37 201 56 291 56 135 0 155-39 273-66C643-2 716-5 782 9v264H0V26z"/>
+        </svg>
+
+        <!-- START WRITING BLOCk -->
+
+        <section class="sectionWriting" id="sectionWriting">
+
+            
+          <div data-block-to-animate="false">
+            <h2 data-animate-from-top>Also some personal writing</h2>
+          
+            <div class="section-description ux" data-move-to-center="from-left">
+              <p class="title-project">Writing as my creativity nourisher.</p>
+              
+              <p>
+                Writing is the closest thing I have to meditation. 
+                It is a real fuel for my creativity and awakens the awareness of my life. 
+                I write about anything that comes to mind: past experiences, people I love, 
+                anything I have seen or heard that has prompted me to reflect.
+                <br/>
+                By writing, I talk to myself, to others, I learn from mistakes, 
+                I analyze, depeen, observe, study my mind.            
+
+                For more stories, I host all of them under my
+                <a href="https://medium.com/@monifasol">Medium profile</a>,
+                where I write regularly.
+              </p>
+            </div>
+          </div>
+
+          <div class="posts-writing">
+
+            <div class="post-headline" data-block-to-animate="false">
+              <p class="post-headline-article-name" data-animate-from-bottom delay="1">
+                Article
+              </p>
+              <p class="post-headline-publication" data-animate-from-bottom delay="1">
+                Publication
+              </p>
+            </div>
+
+
+            <div class="post" data-block-to-animate="false">
+              <div class="text-wrapper" data-animate-from-bottom delay="2">
+                <a class="post-title a-button" href="https://psiloveyou.xyz/a-beautiful-goodbye-ed6f1c1ec6a6?source=friends_link&sk=602738623784e59fc99652b60a3f6c0d" target="_blank">
+                  A Beautiful Goodbye
+                </a>
+                <p class="post-subtitle">
+                  Alzheimer's didn't allow her to remember, but the force of love worked a miracle
+                </p>
+              </div>
+              <p class="post-publication" data-animate-from-bottom delay="2">
+                P.S. I love you
+              </p>
+            </div>
+
+
+            <div class="post" data-block-to-animate="false">
+              <div class="text-wrapper" data-animate-from-bottom delay="2">
+                <a class="post-title a-button" href="https://medium.com/fearless-she-wrote/sexually-abused-at-the-age-of-eight-a71b93be26f9?source=friends_link&sk=a92f14d872d085111fbd4e94f2df462b" target="_blank">
+                  Sexually Abused at The Age of Eight
+                </a>
+                <p class="post-subtitle">
+                  Abusing a kid can destroy their entire existence, and I've seen it up close in the life of a woman I love.
+                </p>
+              </div>
+              <p class="post-publication" data-animate-from-bottom delay="2">
+                Fearless she wrote
+              </p>
+            </div>
+
+
+            <div class="post" data-block-to-animate="false">
+              <div class="text-wrapper" data-animate-from-bottom delay="2">
+                <a class="post-title a-button" href="https://psiloveyou.xyz/confinement-is-reshaping-the-way-we-connect-c3d8e52cfaec?source=friends_link&sk=0f472a8ca8885545e34a5f54feddca3a" target="_blank">
+                  Confinement is Reshaping The Way We Connect
+                </a>
+                <p class="post-subtitle">
+                  Nothing will be the same after this pandemic
+                </p>
+              </div>
+              <p class="post-publication" data-animate-from-bottom delay="2">
+                P.S. I love you
+              </p>
+            </div>
+
+
+            <div class="post" data-block-to-animate="false">
+              <div class="text-wrapper" data-animate-from-bottom delay="2">
+                <a class="post-title a-button" href="https://psiloveyou.xyz/i-love-you-dearly-although-youre-not-yet-born-1f75ddae615c?source=friends_link&sk=0d831047fe008503d087929cb3b5cb64" target="_blank">
+                  I Love You Dearly — Although You're Not Yet Born
+                </a>
+                <p class="post-subtitle">
+                  A love letter to my baby, who will be in our lives in a few days.
+                </p>
+              </div>
+              <p class="post-publication" data-animate-from-bottom delay="2">
+                P.S. I love you
+              </p>
+            </div>
+
+
+            <div class="post" data-block-to-animate="false">
+              <div class="text-wrapper" data-animate-from-bottom delay="2">
+                <a class="post-title a-button" href="https://medium.com/the-ascent/two-lovers-who-died-on-the-same-day-f16d77ee7881?source=friends_link&sk=9731d3a9b51d9c065e1375a3fee9c344" target="_blank">
+                  Two Lovers Who Died the Same Day
+                </a>
+                <p class="post-subtitle">
+                  I just lost my parents, and their end was magical
+                </p>
+              </div>
+              <p class="post-publication" data-animate-from-bottom delay="2">
+                The ascent
+              </p>
+            </div>
+
+
+            <div class="post" data-block-to-animate="false">
+              <div class="text-wrapper" data-animate-from-bottom delay="2">
+                <a class="post-title a-button" href="https://psiloveyou.xyz/the-simple-joy-of-a-quiet-moment-a3e1fad482be?source=friends_link&sk=bd546243f3f45672405c528b8868ec31" target="_blank">
+                  The Simple Joy of a Quiet Moment
+                </a>
+                <p class="post-subtitle">
+                  We appreciate life more intensely since confinement
+                </p>
+              </div>
+              <p class="post-publication" data-animate-from-bottom delay="2">
+                P.S. I love you
+              </p>
+            </div>
+
+
+            <div class="post" data-block-to-animate="false">
+              <div class="text-wrapper" data-animate-from-bottom delay="2">
+                <a class="post-title a-button" href="https://medium.com/the-ascent/who-should-be-your-first-true-love-56f2d434c999?source=friends_link&sk=eb323be27b7e7630f9f5fef2d20bfaf0" target="_blank">
+                  Who Should Be Your First True Love?
+                </a>
+                <p class="post-subtitle">
+                  After my first love tore me apart, I understood why.
+                </p>
+              </div>
+              <p class="post-publication" data-animate-from-bottom delay="2">
+                The ascent
+              </p>
+            </div>
+
+
+            <div class="post" data-block-to-animate="false">
+              <div class="text-wrapper" data-animate-from-bottom delay="2">
+                <a class="post-title a-button" href="https://medium.com/fearless-she-wrote/stop-telling-me-i-need-a-man-d457159f65c0?source=friends_link&sk=28c3887c0ac50796b1eaaec498aa40ed" target="_blank">
+                  Stop Telling Me I Need a Man
+                </a>
+                <p class="post-subtitle">
+                  All my life, they've asked me, “Do you have a boyfriend?”
+                </p>
+              </div>
+              <p class="post-publication" data-animate-from-bottom delay="2">
+                Fearless she wrote
+              </p>
+            </div>
+
+
+            <div class="post" data-block-to-animate="false">
+              <div class="text-wrapper" data-animate-from-bottom delay="2">
+                <a class="post-title a-button" href="https://psiloveyou.xyz/how-to-deal-with-a-miserable-person-81cc38c5f82d?source=friends_link&sk=a61752f6cb14048796aa091ebfc53278" target="_blank">
+                  How to Deal with a Miserable Person
+                </a>
+                <p class="post-subtitle">
+                  How pitiful can someone's life be if one can only feel joy over someone else's pain?
+                </p>
+              </div>
+              <p class="post-publication" data-animate-from-bottom delay="2">
+                P.S. I love you
+              </p>
+            </div>
+
+
+            <div class="post" data-block-to-animate="false">
+              <div class="text-wrapper" data-animate-from-bottom delay="2">
+                <a class="post-title a-button" href="https://medium.com/fearless-she-wrote/pregnancy-in-the-time-of-the-coronavirus-9eedeca4a31?source=friends_link&sk=3f62fa8532459e5116d4e8ae3da0811b" target="_blank">
+                  Pregnancy in the Time of the Coronavirus
+                </a>
+                <p class="post-subtitle">
+                  Our baby is growing in my belly as we live in a pandemic peak
+                </p>
+              </div>
+              <p class="post-publication" data-animate-from-bottom delay="2">
+                Fearless she wrote
+              </p>
+            </div>
+
+
+
+            <div class="post" data-block-to-animate="false">
+              <div class="text-wrapper" data-animate-from-bottom delay="2">
+                <a class="post-title a-button" href="https://medium.com/the-ascent/the-most-painful-call-of-my-life-481df63e2d0?source=friends_link&sk=de1ed5149afdd85310928d5366574cb7" target="_blank">
+                  The Most Painful Call of My Life
+                </a>
+                <p class="post-subtitle">
+                  I couldn't tell them in person that their daughter died
+                </p>
+              </div>
+              <p class="post-publication" data-animate-from-bottom delay="2">
+                The ascent
+              </p>
+            </div>
+
+
+
+            <div class="post" data-block-to-animate="false">
+              <div class="text-wrapper" data-animate-from-bottom delay="2">
+                <a class="post-title a-button" href="https://medium.com/the-ascent/the-last-day-we-saw-her-eyes-open-174690353cdd?source=friends_link&sk=605ec60750b02d7f5a810bb6cf1d01c3" target="_blank">
+                  The Last Day We Saw Her Eyes Open
+                </a>
+                <p class="post-subtitle">
+                  We will never forget that day; she was going to be a grandmother.
+                </p>
+              </div>
+              <p class="post-publication" data-animate-from-bottom delay="2">
+                The ascent
+              </p>
+            </div>
+
+            <!--
+                When Your Mum Wants You to Hate Your Dad
+                Parents shouldn’t behave this way if they want their children to lead healthy and happy lives
+                https://medium.com/fearless-she-wrote/when-your-mum-wants-you-to-hate-your-dad-d8fe2283a66?source=friends_link&sk=d19fc10c860f108cd88ca4a1958f6f4d
+            -->
+
+          </div> <!-- end div Posts -->
+        </section>
+        <!-- END WRITING BLOCk -->
+
+        <section class="gradient-to-top">
+        </section>
+
+        <svg class="wave-contact" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 782 273">
+          <path d="M782 26c-80 34-166 54-257 59-137 9-189-42-307-69C139-2 66-5 0 9v264h782V26z"/>
+        </svg>
+
+        <section class="contact" data-block-to-animate="false">
+
+          <p> Contact me in: </p>
+          <p class="contact-mean"> moni.sm@gmail.com </p>
+        </section>
+      </main>
+
+    </div> <!-- end loadedContent -->
+  </body>
+
+</html>

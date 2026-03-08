@@ -1,0 +1,11 @@
+
+@font-face {
+  font-family: 'Verona';
+  src: url('verona-serial.otf') format('opentype'),
+       url('verona-serial.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Luna';
+  src: url('Luna.ttf')  format('truetype');
+}

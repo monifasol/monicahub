@@ -1,0 +1,1 @@
+Monicahub snapshot - 2026-03-08 - after creating components/hub, cleaning the project's page.js, etc

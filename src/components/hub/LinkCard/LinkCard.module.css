@@ -1,0 +1,107 @@
+.card{
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  padding: 20px;
+  padding-left: clamp(104px, 18vw, 134px); /* Mobile-safe */
+
+  margin: 20px 0;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 22px;
+
+  background: rgba(255,255,255,0.55);
+  /* background: rgba(255,255,255,0.65); */
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(0,0,0,0.06);
+
+  transition: transform .15s ease, box-shadow .15s ease;
+
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.6) inset,
+    0 8px 28px rgba(0,0,0,0.06);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.08);
+  border-color: color-mix(in srgb, var(--accent) 65%, transparent);
+}
+.card:hover .illustration img{
+    transform: scale(1.04);
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--accent-contrast);
+  outline-offset: 4px;
+}
+
+
+.card::before{
+  content:"";
+  position:absolute;
+  inset: 1px;
+  border-radius: 21px;
+  pointer-events:none;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.70),
+    rgba(255,255,255,0.18)
+  );
+  opacity: 0.6;
+}
+
+.illustration{
+  position: absolute;
+  top: 44%;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+
+  /* Mobile-safe */
+  left: clamp(-42px, -7vw, -34px);
+  width: clamp(110px, 18vw, 130px);
+  height: clamp(110px, 18vw, 130px);
+
+
+  /* decorative dot, not convinced */
+  /* &::after{
+    content:"";
+    position:absolute;
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background: var(--accent);
+    top:50%;
+    right:-16px;        
+    transform: translateY(-50%);
+    opacity: 0.5;
+  } */
+}
+
+
+.illustration img{
+  width: clamp(92px, 16vw, 104px);
+  height: auto;
+  filter: drop-shadow(0 14px 20px rgba(42,35,35,0.14));
+  transition: transform .2s ease;
+}
+
+.text{
+  flex: 1;
+}
+
+.title{
+  margin: 0;
+  font-size: 1.14rem;
+  font-weight: 600;
+}
+
+.desc{
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: rgba(60,52,52,0.65);
+}

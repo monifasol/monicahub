@@ -1,0 +1,78 @@
+.hubPage {
+  /* hub page variables */
+  --bg: #F6EFEA;
+  --card: #FFFFFF;
+  --accent: #C89A9A;
+  --accent-soft: #E7C4C4;
+  --accent-contrast: #6F9A7C;
+  --ink: #2A2323;
+  --muted: #6E6161;
+  --line: rgba(42,35,35,0.10);
+
+  --radius: 18px;
+  --shadow: 0 6px 18px rgba(42,35,35,0.06);
+
+  /* Take the accent color and mix 25% black into it, so: 75% green 25% black */
+  --accent-contrast-dark: color-mix(in srgb, var(--accent-contrast) 75%, black);
+
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--ink);
+  line-height: 1.55;
+
+  /* discreet gradient */
+  background:
+    radial-gradient(900px 620px at 18% 12%, rgba(231,196,196,0.40), rgba(246,239,234,0) 60%),
+    radial-gradient(780px 560px at 86% 28%, rgba(200,154,154,0.22), rgba(246,239,234,0) 62%),
+    linear-gradient(180deg, #FBF7F3 0%, #F6EFEA 60%, #FBF7F3 100%);
+
+  position: relative;
+  z-index: 1;
+}
+
+/* floating dots layer */
+.hubPage::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.8;
+
+  background:
+    radial-gradient(circle at 12% 22%, var(--accent) 0 1.2px, transparent 3px),
+    radial-gradient(circle at 78% 18%, var(--accent) 0 1px, transparent 2px),
+    radial-gradient(circle at 88% 62%, var(--accent) 0 1.4px, transparent 3px),
+    radial-gradient(circle at 12% 96%, var(--accent) 0 1px, transparent 2px),
+    radial-gradient(circle at 2% 46%, var(--accent) 0 1.2px, transparent 3px),
+
+    radial-gradient(circle at 20% 32%, var(--accent-contrast) 0 1.2px, transparent 2px),
+    radial-gradient(circle at 97% 45%, var(--accent-contrast) 0 1px, transparent 3px),
+    radial-gradient(circle at 90% 24%, var(--accent-contrast) 0 1.4px, transparent 2px),
+    radial-gradient(circle at 8% 76%, var(--accent-contrast) 0 1px, transparent 3px),
+    radial-gradient(circle at 3% 90%, var(--accent-contrast) 0 1.2px, transparent 2px);
+}
+
+.hubPage .topBotanical {
+  width: 100%;
+  background-image: url("/illustrations/botanical-strip.png");
+  background-repeat: repeat-x;  /* repeat horizontally across the page */
+  background-position: top center;
+  pointer-events: none;         /* decorative only */
+  display: block;
+
+  height: clamp(48px, 6vw, 64px);
+  background-size: auto clamp(48px, 6vw, 60px);
+  margin-top: -4px; /* slight overlap to hide any gap at the top */
+}
+
+/* make sure your app content is above dots */
+.hubPage .hubPageContent{
+  position: relative;
+  z-index: 1;
+  position: relative;
+  max-width: 620px;
+  margin: auto;
+  padding: 70px 24px;
+}
+
