@@ -1,0 +1,87 @@
+.post {
+  flex: 0 1 100%;
+  max-width: 450px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  margin-bottom: 40px;
+  line-height: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.post .textWrapper {
+  width: 100%;
+  flex: 1 0 auto;
+  text-align: left;
+}
+.post .postTitle {
+  color: #FB8096;
+  letter-spacing: 0.02em;
+  margin: 10px 0;
+  font-family: "Quattrocento", serif;
+  font-size: 1.3em;
+}
+.post .postTitle:hover {
+  color: black;
+}
+.post .postSubtitle {
+  margin-top: 0px;
+  line-height: 24px;
+}
+.post .imgWrapper {
+  max-height: 190px;
+  margin: 10px auto;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 4px;
+}
+.post .imgWrapper .image {
+  width: 110%;
+  height: auto;
+}
+
+@media all and (min-width: 600px) {
+  .post {
+    flex: 0 1 80%;
+    margin-bottom: 60px;
+  }
+}
+
+@media all and (min-width: 750px) {
+  .post {
+    flex: 0 1 100%;
+    flex-direction: row;
+    margin: 16px 0px;
+    max-width: none;
+  }
+  .post .textWrapper {
+    width: 60%;
+    margin: 0 0 0 20px;
+  }
+  .post .textWrapper .postTitle {
+    margin: 0 0 10px 0;
+  }
+}
+
+@media all and (min-width: 960px) {
+  .post {
+    flex: 0 1 370px;
+    flex-direction: column;
+    margin: 0px 20px 48px 20px;
+  }
+  .post .textWrapper {
+    width: 100%;
+    margin: 0px;
+  }
+  .post .imgWrapper img {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .post {
+    flex: 0 1 470px;
+    margin: 0px 30px 52px 30px;
+  }
+}

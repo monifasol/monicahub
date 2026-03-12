@@ -1,0 +1,224 @@
+.designPage {
+  color: #333;
+  font-size: 1em;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /*  ======= colors by default ======= */
+  --color: #FFD2D7;
+  --color-b: #FFA0AB;
+}
+
+/* Arrow Up */
+.designPage .arrowUp {
+  position: fixed;
+  bottom: 0px;
+  left: -80px;
+  height: auto;
+  z-index: 3;
+  cursor: pointer;
+  transition: all 0.5s 0s ease-in-out;
+}
+.designPage .arrowUp.visible {
+  left: 4px;
+}
+.designPage .arrowUp .buttonGoUp {
+  /* width: 48px; */
+  /* width: 70px; */
+  transform: rotate(180deg);
+  cursor: pointer;
+  width: 100%;
+  position: absolute;
+  bottom: -180px;
+  text-align: center;
+  z-index: 0;
+
+}
+.designPage .arrowUp .buttonGoUp:hover {
+  box-shadow: 0px 0px 20px 10px #FFEFF2;
+  border-radius: 50%;
+}
+
+
+
+.designPage ::-moz-selection {
+  background-color: #ffebf2;
+}
+.designPage ::selection {
+  background-color: #ffebf2;
+}
+.designPage p {
+  margin-top: 12px;
+}
+.designPage b {
+  font-weight: bold;
+}
+
+
+
+
+
+/* ---------- Links ---------- */
+/* .designPage a {
+  position: relative;
+  color: #FB8096;
+  text-decoration: none;
+  cursor: pointer;
+}
+.designPage a:before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  bottom: -8px;
+  left: 0;
+  background: #FB8096;
+  border-radius: 5px;
+  transition: 0.3s ease-in;
+}
+.designPage a:hover:before, body a:focus:before {
+  width: 100%;
+} */
+
+
+/* aButton does ONLy this!!! Check if its really needed! */
+.designPage .aButton {
+  position: unset !important;
+}
+.designPage .aButton::before {
+  content: none !important;
+}
+
+
+
+
+
+.designPage h2 {
+  font-size: 2.1em;
+  margin: 30px 0 50px 0;
+  color: #2C2C2C;
+  line-height: 1.3em;
+  font-family: "Quattrocento", serif;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0em;
+}
+.designPage h2 .subH2 {
+  font-size: 0.7em;
+  display: block;
+}
+.designPage h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.designPage [data-target] {
+  text-decoration: none;
+  color: black;
+  z-index: 3;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.designPage main {
+  width: 100vw;
+  margin-top: 64px;
+  position: relative;
+}
+.designPage .progressBar {
+  height: 6px;
+  width: 100vw;
+  visibility: hidden;
+  opacity: 0;
+  background-color: #FB8096;
+  z-index: 9999;
+  position: fixed;
+  top: 0px;
+  animation: slideInFromLeft 2.3s 1 ease-in-out, fadeIn 0s 1 forwards;
+}
+
+.designPage .wrapperFullContent {
+  margin-top: 90px;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.gradientToTop {
+  width: 100vw;
+  height: 90px;
+  background: #ffeff2;
+  background: -moz-linear-gradient(0deg, #ffeff2 0%, white 100%);
+  background: -webkit-linear-gradient(0deg, #ffeff2 0%, white 100%);
+  background: linear-gradient(0deg, #ffeff2 0%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffeff2",endColorstr="#ffffff",GradientType=1);
+}
+
+.designPage footer {
+  display: none;
+  background-color: #000000;
+  background-color: white;
+  border-top: 3px solid #FB8096;
+  color: #FB8096;
+  text-align: center;
+  line-height: 1.6em;
+  width: 100%;
+  padding: 20px;
+  font-size: 0.9em;
+  position: absolute;
+  bottom: 0;
+}
+
+
+@media all and (min-width: 600px) {
+  .designPage main {
+    margin-top: 60px;
+  }
+  .designPage h2 {
+    margin: 30px 0 70px 0;
+  }
+  .designPage .arrowUp span {
+    bottom: 70px;
+    left: -21px;
+    width: 80px;
+  }
+}
+@media all and (min-width: 750px) {
+  .designPage .arrowUp {
+    display: block;
+  }
+  .designPage .arrowUp span {
+    bottom: 130px;
+    left: -13px;
+    width: 80px;
+  }
+  .designPage .arrowUp img {
+    width: 62px;
+  }
+
+  .wrapperFullContent {
+    margin-top: 100px;
+  }
+  .gradientToTop {
+    height: 120px;
+  }
+}
+@media all and (min-width: 960px) {
+  .designPage {
+    font-size: 1.1em;
+    line-height: 34px;
+  }
+  .designPage h2 {
+    margin: 40px 0 100px;
+  }
+  .designPage main {
+    margin-top: 72px;
+  }
+}

@@ -1,0 +1,312 @@
+.sectionProjects .titleExplanation {
+  text-align: justify;
+  line-height: inherit;
+  padding: 0 24px;
+}
+.sectionProjects .titleExplanation span {
+  position: relative;
+  color: #FB8096;
+}
+.sectionProjects .titleExplanation span:before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  bottom: -8px;
+  left: 0;
+  background: #FB8096;
+  border-radius: 5px;
+  transition: 0.3s ease-in;
+}
+.sectionProjects .titleExplanation span:hover:before, 
+.sectionProjects .titleExplanation span:focus:before {
+  width: 100%;
+}
+
+.sectionProjects .subTitle {
+  font-family: "Quattrocento", serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.sectionProjects .quotes {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  margin-top: 30px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+
+.sectionWeb .project {
+  box-shadow: 0px 0px 50px 10px #DEFDF6;
+  padding: 10px 20px;
+  width: 98%;
+  border-radius: 20px;
+  margin: auto;
+  background-color: white;
+}
+.sectionWeb .project .projectTitle {
+  font-family: "Quattrocento", serif;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.sectionWeb .project p {
+  text-align: justify;
+}
+
+.projectWrapper .projectTitle {
+  font-weight: bold;
+  text-align: center;
+  margin: 30px auto;
+  font-family: "Quattrocento", serif;
+  font-weight: bold;
+}
+.projectWrapper .projectTitle small {
+  font-size: 0.8em;
+  font-weight: normal;
+  font-style: italic;
+}
+.projectWrapper .projectTitleSummary {
+  display: block;
+  font-size: 1em;
+  margin-top: 10px;
+  color: #FB8096;
+  font-weight: normal;
+}
+.projectWrapper .projectDescription {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 30px;
+  text-align: justify;
+}
+.projectWrapper .projectDescription img.logo {
+  width: 180px;
+  margin: 0px auto;
+  padding: 0px;
+}
+.projectWrapper .projectDescription .projectText {
+  width: 98%;
+  margin: 30px auto 0;
+  text-align: justify;
+}
+
+
+
+
+
+
+
+.projectShowcaseDesign {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.projectShowcaseDesign img {
+  flex: auto;
+  width: 100%;
+}
+.projectShowcaseDesign h3.text {
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0;
+  font-family: "Quattrocento", serif;
+}
+.projectShowcaseDesign h3.text span {
+  font-size: smaller;
+  text-transform: none;
+  display: block;
+  font-weight: normal;
+}
+
+.showcase {
+  margin-top: 60px;
+}
+.showcase img {
+  width: 100%;
+}
+.showcase.web.piggy {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.showcase.web.piggy img {
+  width: 100%;
+}
+.showcase.web.piggy img:nth-child(3), .showcase.web.piggy img:nth-child(4) {
+  display: none;
+}
+.showcase.web {
+  margin-top: 60px;
+}
+
+
+
+
+
+
+
+@media all and (min-width: 600px) {
+  .sectionProjects .titleExplanation {
+    padding: 0 32px;
+    margin-bottom: 40px;
+  }
+
+  .sectionProjects .quotes {
+    padding: 0px;
+    width: 90%;
+    margin: 30px auto 0;
+  }
+
+  .sectionWeb .project {
+    padding: 20px 28px;
+  }
+
+  .showcase.web {
+    margin-top: 70px;
+  }
+}
+
+
+
+
+@media all and (min-width: 750px) {
+
+  .sectionProjects .titleExplanation {
+    padding: 0;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .projectWrapper .projectDescription img.logo {
+    width: 200px;
+  }
+  .projectWrapper .projectDescription .projectText {
+    width: 100%;
+    margin: 40px auto 0;
+  }
+
+  .showcase.web.piggy img {
+    width: 45%;
+    margin: 14px;
+  }
+  .showcase.web.piggy img:nth-child(3), .showcase.web.piggy img:nth-child(4) {
+    display: block;
+  }
+
+}
+
+@media all and (min-width: 960px) {
+
+  .sectionProjects .titleExplanation {
+    padding: 0 48px;
+  }
+  
+  .sectionProjects .subTitle {
+    margin: 40px 0;
+  }
+
+  .sectionProjects .quotes {
+    width: 85%;
+    margin-top: 50px;
+  }
+
+  .sectionWeb .project {
+    width: 470px;
+    margin: unset;
+  }
+
+  .showcase.web {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 190px;
+  }
+
+  .projectWrapper {
+    width: 90%;
+    margin: auto;
+  }
+  .projectWrapper .projectDescription {
+    flex-direction: row;
+  }
+  .projectWrapper .projectDescription img.logo {
+    width: 180px;
+    flex: 0 0 20%;
+    margin: unset;
+  }
+  .projectWrapper .projectDescription .projectText {
+    padding: 0 0 0 50px;
+    flex: 0 0 78%;
+    margin: 0 auto;
+  }
+
+  .projectShowcaseDesign {
+    flex-direction: row;
+    margin: 50px auto;
+    justify-content: space-around;
+  }
+  .projectShowcaseDesign img {
+    flex: 0 0 76%;
+    max-width: 76%;
+  }
+  .projectShowcaseDesign picture {
+    display: flex;
+    flex: 0 0 76%;
+  }
+  .projectShowcaseDesign picture img {
+    max-width: unset;
+    flex: none;
+  }
+  .projectShowcaseDesign h3.text {
+    flex: 0 0 auto;
+  }
+
+
+}
+
+@media all and (min-width: 1200px) {
+
+  .sectionProjects .titleExplanation {
+    max-width: 1150px;
+    margin: 0px auto 80px;
+  }
+
+  .sectionProjects .quotes {
+    max-width: 1150px;
+  }
+  .sectionProjects .titleExplanation {
+    width: 60vw;
+  }
+
+  .sectionWeb .project {
+    width: 498px;
+    margin: unset;
+  }
+
+  .projectWrapper {
+    max-width: 1150px;
+  }
+
+  .projectShowcaseDesign {
+    margin: 90px auto;
+    max-width: 1150px;
+  }
+
+
+}

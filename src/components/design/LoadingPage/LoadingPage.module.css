@@ -1,0 +1,140 @@
+#loader {
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  transition: opacity 1s 0s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  z-index: 9999;
+  background: #ffd2d7;
+  background: -moz-linear-gradient(0deg, #FFD2D7 0%, #FFF0E7 50%, #DEFDF6 100%);
+  background: -webkit-linear-gradient(0deg, #FFD2D7 0%, #FFF0E7 50%, #DEFDF6 100%);
+  background: linear-gradient(0deg, #FFD2D7 0%, #FFF0E7 50%, #DEFDF6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd2d7",endColorstr="#defdf6",GradientType=1);
+}
+#loader .loading {
+  opacity: 1;
+}
+#loader.loaded {
+  opacity: 0;
+  display: none;
+}
+#loader .loaderContainer {
+  position: relative;
+  width: 50%;
+  margin-top: -20%;
+  margin-left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media all and (min-width: 750px) {
+  #loader .loaderContainer {
+    width: 450px;
+  }
+}
+@media all and (min-width: 960px) {
+ #loader .loaderContainer {
+   margin-left: 10%;
+  }
+}
+
+#loader .loaderContainer .loadingText {
+  position: absolute;
+  bottom: -200px;
+  left: 14%;
+}
+
+#loader .loaderContainer .ring {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: solid 4px transparent;
+  animation: animate 4s linear infinite;
+
+  &:nth-child(1) {
+    left: 20px;
+    border-top: 4px solid #81C378;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -32px;
+      right: 34px;
+      width: 60px;
+      height: 37px;
+      transform: rotate(-24deg);
+      background: url("/design/img/canvas/leaf-flower.png") no-repeat center;
+      background-size: contain;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      right: -16px;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      background: url("/design/img/canvas/flower3.png") no-repeat center;
+      background-size: contain;
+    }
+  }
+  &:nth-child(2) {
+    border-bottom: 4px solid #81C378;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -32px;
+      left: 34px;
+      width: 60px;
+      height: 37px;
+      transform: rotate(-204deg);
+      background: url("/design/img/canvas/leaf-flower.png") no-repeat center;
+      background-size: contain;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      left: -16px;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      background: url("/design/img/canvas/flower4.png") no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  &:nth-child(3) {
+    left: -70px;
+    border-left: 4px solid #81C378;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 63px;
+      left: -49px;
+      width: 60px;
+      height: 37px;
+      transform: rotate(-128deg);
+      background: url("/design/img/canvas/leaf-flower.png") no-repeat center;
+      background-size: contain;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: -8px;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      background: url("/design/img/canvas/flower2.png") no-repeat center;
+      background-size: contain;
+    }
+  }
+}

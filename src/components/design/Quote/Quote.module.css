@@ -1,0 +1,57 @@
+.quote {
+  margin: 30px 0px;
+}
+
+.quote .blockquote {
+  font-style: italic;
+  quotes: "“" "”" "'" "'";
+  width: 100%;
+  letter-spacing: 0.03em;
+  line-height: 2em;
+  margin-bottom: 10px;
+}
+.quote .blockquote:before,
+.quote .blockquote:after {
+  color: #FFD2D7;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+  content: ”“”;
+
+}
+.quote .blockquote:before {
+  content: open-quote;
+}
+.quote .blockquote:after {
+  content: close-quote;
+}
+.quote .blockquote p {
+  display: inline;
+}
+
+
+@media all and (min-width: 600px) {
+
+  .quote {
+    width: 60%;
+  }
+  .quote:nth-child(1) {
+    align-self: end;
+  }
+  .quote:nth-child(2) {
+    align-self: start;
+  }
+
+}
+
+@media all and (min-width: 960px) {
+
+  .quote {
+    width: 45%;
+  }
+  .quote blockquote {
+    letter-spacing: 0.02em;
+    line-height: 2.2em;
+  }
+}

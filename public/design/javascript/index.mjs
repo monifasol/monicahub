@@ -20,7 +20,3 @@ window.addEventListener('DOMContentLoaded', function () {
 	}, 1500)
 
 }, false);
-
-
-// Perfect documentation for JS Modules:
-// https://medium.com/@crohacz_86666/basics-of-modular-javascript-2395c82dd93a

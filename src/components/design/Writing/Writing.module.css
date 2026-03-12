@@ -1,0 +1,33 @@
+.postsWriting {
+  text-align: left;
+  margin-top: 40px;
+}
+.postsWriting .postHeadline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Quattrocento", serif;
+  font-size: 1.8em;
+}
+.postsWriting .postHeadlineArticleName {
+  width: 80%;
+}
+.postsWriting .postHeadlinePublication {
+  min-width: 20%;
+}
+
+@media all and (min-width: 960px) {
+  .postsWriting {
+    margin-top: 50px;
+    padding: 0 48px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .postsWriting {
+    width: 1100px;
+    margin: 90px auto 80px;
+  }
+}

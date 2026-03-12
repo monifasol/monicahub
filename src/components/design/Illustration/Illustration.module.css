@@ -1,0 +1,25 @@
+.illustrationFeedInstagram {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+}
+.illustrationFeedInstagram .wrapperIllus {
+  width: 45%;
+  margin: 2px;
+}
+.illustrationFeedInstagram .wrapperIllus img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media all and (min-width: 960px) {
+  .illustrationFeedInstagram {
+    margin-top: 80px;
+  }
+  .illustrationFeedInstagram .wrapperIllus {
+    width: 30%;
+    margin: 10px;
+  }
+}
