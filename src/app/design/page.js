@@ -38,23 +38,23 @@ export default function DesignPage() {
       <div className={styles.wrapperFullContent}>
         <Hero />
 
-        <Wave variant="rosa" />
+        <Wave  extraClassName="waveFlipped" variant="rosa" />
 
         <Hello />
 
-        <Wave extraClassName="waveFlipped" variant="green" />
+        <Wave variant="green" />
 
         <RevealOnScroll>
           <Projects />
         </RevealOnScroll>
 
-        <Wave extraClassName="waveFlipped" variant="peach" />
+        <Wave variant="peach" />
 
         <Illustration />
 
         <Separator />
 
-        <Wave variant="rosa" />
+        <Wave extraClassName="waveFlipped" variant="rosa" />
 
         <Writing />
 

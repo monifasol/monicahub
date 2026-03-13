@@ -1,6 +1,7 @@
 import { useId } from "react";
 import styles from "./Wave.module.css";
 import clsx from "clsx";
+import "./wave.css";
 
 export default function Wave({ 
   extraClassName = "",
