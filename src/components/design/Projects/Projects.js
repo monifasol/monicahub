@@ -78,80 +78,71 @@ export default function Projects() {
             </Quote>
           </div>
 
-
           <Separator />
 
           {/* Project: Online Game Save Piggy */}
 
-          <div className={styles.sectionWeb} id="sectionWeb">
+          <ProjectHead
+            title="Project: Online Game Save Piggy"
+            subtitle="Vanilla Javascript (ES6), HTML5, CSS3, animations"
+          />
 
-            <ProjectHead
-              title="Project: Online Game Save Piggy"
-              subtitle="Vanilla Javascript (ES6), HTML5, CSS3, animations"
-            />
+          <BoxDescription 
+            title="An Online Game: Save Piggy from the butcher!"
+            variant="green"> 
+            {/* variant green does not work !! */}
+              Game for the browser to train DOM manipulation, Javascript classes and objects, 
+              developed in HTML5, CSS3 animations, and Vanilla Javascript (ES6).
+              The game consists in saving the pig from the butcher. Dodge the knives thrown from the sky, 
+              while collecting fruits from the field on his way.
+          </BoxDescription>
 
-            <BoxDescription 
-              title="An Online Game: Save Piggy from the butcher!"
-              variant="green"> 
-              {/* variant green does not work !! */}
-                Game for the browser to train DOM manipulation, Javascript classes and objects, 
-                developed in HTML5, CSS3 animations, and Vanilla Javascript (ES6).
-                The game consists in saving the pig from the butcher. Dodge the knives thrown from the sky, 
-                while collecting fruits from the field on his way.
-            </BoxDescription>
-
-            <div className={clsx(styles.showcase, styles.web, styles.piggy)}>
-                <img src="/design/img/showcase/piggy1.png"/>
-                <img src="/design/img/showcase/piggy2.png"/>
-                <img src="/design/img/showcase/piggy3.png"/>
-                <img src="/design/img/showcase/piggy4.png"/>
-            </div>
+          <div className={styles.showcase}>
+              <img src="/design/img/showcase/piggy1.png"/>
+              <img src="/design/img/showcase/piggy2.png"/>
+              <img src="/design/img/showcase/piggy3.png"/>
+              <img src="/design/img/showcase/piggy4.png"/>
           </div>
 
           <Separator />
 
           {/* Project: Mes Amis */}
             
-          <div className={styles.projectWrapper}>
+          <ProjectHead
+            title="Project: Mes Amis"
+            subtitle="User Research and UI Design of an app for children to learn a new language while having fun."
+          />
 
-            <ProjectHead
-              title="Project: Mes Amis"
-              subtitle="User Research and UI Design of an app for children to learn a new language while having fun."
-            />
+          <BoxDescription 
+            title="Save animals while learning a language!"
+            variant="orange"
+            image="/design/img/design/mesamis-logo.png"
+            imageAlt="Mes Amis logo"
+            imageWidth={150}
+            imageHeight={150}
+          >
+              <p>
+                The project <b>Mes Amis</b> ('my friends' in French) started with just an idea and a blank paper: 
+                "Design of an app for children to learn a new language while having fun."
+                After a UX research, interviews, and user and market research, 
+                these are the high fidelity design screens for the mobile app for kids. 
+              </p>
+              <p>
+                For the complete Case Study, interactive prototype, full set of screens,
+                and the whole UX and UI process, visit 
+                the <a target="_blank" className={sharedStyles.link} href="https://bootcamp.uxdesign.cc/case-study-designing-a-language-app-for-kids-1f2908430211">
+                  Medium article.
+                </a> I wrote about it.
+              </p>
+          </BoxDescription>
 
-            <BoxDescription 
-              title="Save animals while learning a language!"
-              variant="orange"
-              image="/design/img/design/mesamis-logo.png"
-              imageAlt="Mes Amis logo"
-              imageWidth={150}
-              imageHeight={150}
-            >
-                <p>
-                  The project <b>Mes Amis</b> ('my friends' in French) started with just an idea and a blank paper: 
-                  "Design of an app for children to learn a new language while having fun."
-                  After a UX research, interviews, and user and market research, 
-                  these are the high fidelity design screens for the mobile app for kids. 
-                </p>
-                <p>
-                  For the complete Case Study, interactive prototype, full set of screens,
-                  and the whole UX and UI process, visit 
-                  the <a target="_blank" className={sharedStyles.link} href="https://bootcamp.uxdesign.cc/case-study-designing-a-language-app-for-kids-1f2908430211">
-                    Medium article.
-                  </a> I wrote about it.
-                </p>
-            </BoxDescription>
-          </div>
-
-          <div className={styles.projectShowcaseDesign}>
-            <h3 className={clsx(styles.text, styles.changeOrder)}>Style tiles</h3>
+          <div className={styles.showcaseDesign}>
+            <p className={styles.text}>Style tiles</p>
             <img src="/design/img/design/mesamis-style-tiles.png"/>
           </div>
 
-          <div className={styles.projectShowcaseDesign}>
-            <h3 className={styles.text}>
-              Final screens<span>(short sample)</span>
-            </h3>
+          <div className={styles.showcaseDesign}>
+            <p className={styles.text}>Final screens</p>
             <img src="/design/img/design/mes-amis-group-screens.png"/>
           </div>
 

@@ -1,11 +1,8 @@
 
-
-
-.sectionProjects .quotes {
+.quotes {
   display: flex;
   flex-direction: column;
-  padding: 16px;
-  margin-top: 30px;
+  margin: 30px auto 0;
 }
 
 .posts {
@@ -17,14 +14,8 @@
   margin-top: 20px;
 }
 
-
-
-
-
-
-
-
-.projectShowcaseDesign {
+/* showcase for Mes Amis project */
+.showcaseDesign {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -32,69 +23,55 @@
   flex-direction: column;
   margin-top: 40px;
 }
-.projectShowcaseDesign img {
-  flex: auto;
+.showcaseDesign img {
   width: 100%;
 }
-.projectShowcaseDesign h3.text {
+.showcaseDesign .text {
   font-weight: bold;
-  text-align: center;
   margin: 30px 0;
-}
-.projectShowcaseDesign h3.text span {
-  font-size: smaller;
-  text-transform: none;
-  display: block;
-  font-weight: normal;
+  font-size: 1.3em;
 }
 
+
+/* showcase for Online game Piggy project */
 .showcase {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
   margin-top: 60px;
 }
 .showcase img {
   width: 100%;
 }
-.showcase.web.piggy {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.showcase.web.piggy img {
-  width: 100%;
-}
-.showcase.web.piggy img:nth-child(3), .showcase.web.piggy img:nth-child(4) {
+.showcase img:nth-child(3),
+.showcase img:nth-child(4) {
   display: none;
 }
-.showcase.web {
-  margin-top: 60px;
-}
-
-
 
 
 @media all and (min-width: 600px) {
-
-  .sectionProjects .quotes {
-    padding: 0px;
-    width: 90%;
-    margin: 30px auto 0;
+  .quotes {
+    width: 80%;
   }
-
-  .showcase.web {
-    margin-top: 70px;
+  .showcase {
+    gap: 20px;
   }
 }
 
-
-
-
 @media all and (min-width: 750px) {
-
-  .showcase.web.piggy img {
-    width: 45%;
-    margin: 14px;
+  .quotes {
+    width: 100%;
   }
-  .showcase.web.piggy img:nth-child(3), .showcase.web.piggy img:nth-child(4) {
+  .showcase {
+    gap: 30px;
+  }
+
+  .showcase img {
+    width: 47%;
+  }
+  .showcase img:nth-child(3),
+  .showcase img:nth-child(4) {
     display: block;
   }
 
@@ -102,57 +79,38 @@
 
 @media all and (min-width: 960px) {
 
-  .sectionProjects .quotes {
-    width: 85%;
+  .quotes {
+    width: 84%;
     margin-top: 50px;
   }
 
-  .showcase.web {
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 190px;
-  }
-
-  .projectWrapper {
-    width: 90%;
-    margin: auto;
-  }
-
-  .projectShowcaseDesign {
+  .showcaseDesign {
     flex-direction: row;
     margin: 50px auto;
     justify-content: space-around;
   }
-  .projectShowcaseDesign img {
+  .showcaseDesign img {
     flex: 0 0 76%;
     max-width: 76%;
   }
-  .projectShowcaseDesign picture {
-    display: flex;
-    flex: 0 0 76%;
-  }
-  .projectShowcaseDesign picture img {
-    max-width: unset;
-    flex: none;
-  }
-  .projectShowcaseDesign h3.text {
+  .showcaseDesign .text {
     flex: 0 0 auto;
   }
-
-
 }
 
 @media all and (min-width: 1200px) {
 
-  .sectionProjects .quotes {
-    max-width: 1150px;
+  .quotes {
+    max-width: 950px;
   }
 
-  .projectWrapper {
+  .showcase {
     max-width: 1150px;
+    margin: 70px auto;
+    gap: 50px;
   }
 
-  .projectShowcaseDesign {
+  .showcaseDesign {
     margin: 90px auto;
     max-width: 1150px;
   }

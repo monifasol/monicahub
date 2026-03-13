@@ -5,18 +5,16 @@
 .quote .blockquote {
   font-style: italic;
   quotes: "“" "”" "'" "'";
-  width: 100%;
-  letter-spacing: 0.03em;
-  line-height: 2em;
+  line-height: 1.8em;
   margin-bottom: 10px;
 }
 .quote .blockquote:before,
 .quote .blockquote:after {
   color: var(--colorRoseLight);
   font-size: 4em;
-  line-height: 0.1em;
+  line-height: 0em;
   margin-right: 0.25em;
-  vertical-align: -0.4em;
+  vertical-align: -0.5em;
   content: ”“”;
 
 }
@@ -26,13 +24,8 @@
 .quote .blockquote:after {
   content: close-quote;
 }
-.quote .blockquote p {
-  display: inline;
-}
 
-
-@media all and (min-width: 600px) {
-
+@media all and (min-width: 750px) {
   .quote {
     width: 60%;
   }
@@ -42,16 +35,14 @@
   .quote:nth-child(2) {
     align-self: start;
   }
-
 }
 
-@media all and (min-width: 960px) {
+@media all and (min-width: 1200px) {
 
   .quote {
     width: 45%;
   }
   .quote blockquote {
-    letter-spacing: 0.02em;
-    line-height: 2.2em;
+    line-height: 2em;
   }
 }

@@ -38,30 +38,30 @@ export default function DesignPage() {
       <div className={styles.wrapperFullContent}>
         <Hero />
 
-        <Wave className="wave" variant="rosa" />
+        <Wave variant="rosa" />
 
         <Hello />
 
-        <Wave className="wave waveFlipped" variant="green" />
+        <Wave extraClassName="waveFlipped" variant="green" />
 
-        <RevealOnScroll delay={120}>
+        <RevealOnScroll>
           <Projects />
         </RevealOnScroll>
 
-        <Wave className="wave waveFlipped" variant="peach" />
+        <Wave extraClassName="waveFlipped" variant="peach" />
 
         <Illustration />
 
         <Separator />
 
-        <Wave className="wave" variant="rosa" />
+        <Wave variant="rosa" />
 
         <Writing />
 
         <section className={styles.gradientToTop}>
         </section>
 
-        <Wave className="wave waveContact" variant="green" />
+        <Wave extraClassName="waveContact" variant="green" />
 
         <Contact />
 

@@ -1,11 +1,41 @@
 .hero {
   position: relative;
 }
-.hero .name {
+/* .hero .name {
   display: none;
   opacity: 0;
   visibility: hidden;
-}
+} */
+
+  .hero .name {
+    width: 100%;
+    height: 130px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-content: center;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s 0s ease-out;
+    margin-top: 24px;
+  }
+  .hero .name .letter {
+    width: auto;
+    height: 74%;
+  }
+  .hero .name .letter.first {
+    height: 90%;
+  }
+  .hero .name .letter.high {
+    height: 100%;
+  }
+  .hero .name .letter img {
+    height: 100%;
+  }
+
+
 .hero .motto {
   width: 100%;
   margin: 40px auto;
@@ -35,31 +65,9 @@
 @media all and (min-width: 600px) {
 
   .hero .name {
-    width: 100%;
-    height: 130px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: end;
-    align-content: center;
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.5s 0s ease-out;
     padding-left: 30px;
-    margin-top: 24px;
   }
-  .hero .name .letter {
-    text-align: center;
-    width: auto;
-    height: 70%;
-  }
-  .hero .name .letter.high {
-    height: 100%;
-  }
-  .hero .name .letter img {
-    height: 100%;
-  }
+  
   .hero .motto {
     width: 80%;
     padding-left: 30px;

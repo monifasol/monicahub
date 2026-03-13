@@ -11,7 +11,7 @@ export default function Quote({
       </blockquote>
 
       {author && (
-        <cite>— {author}</cite>
+        <span>— {author}</span>
       )}
     </div>
   );

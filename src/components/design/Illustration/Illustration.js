@@ -80,7 +80,8 @@ export default function Illustration() {
 
             <Link
               className={sharedStyles.theButton}
-              target="_blank" href="http://www.instagram.com/moni.ca.art">
+              target="_blank"
+              href="http://www.instagram.com/moni.ca.art">
                 See full Instagram feed!
             </Link>
         </section>

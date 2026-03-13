@@ -1,4 +1,5 @@
 import styles from "./Hero.module.css";
+import clsx from "clsx";
 
 export default function Hero() {
 
@@ -16,7 +17,7 @@ export default function Hero() {
 
       <div className={`${styles.name} ${styles.overTheFold}`}>
 
-        <div className={styles.letter}>
+        <div className={clsx(styles.letter, styles.first)}>
           { buildLetter("c") }
         </div>
         <div className={styles.letter}>
@@ -28,7 +29,7 @@ export default function Hero() {
         <div className={styles.letter}>
           { buildLetter("a") }
         </div>
-        <div className={`${styles.letter} ${styles.high}`}>
+        <div className={clsx(styles.letter, styles.high)}>
           { buildLetter("t") }
         </div>
         <div className={styles.letter}>
@@ -39,7 +40,7 @@ export default function Hero() {
       <div className={`${styles.motto} ${styles.overTheFold}`}>
         <span className={styles.mottoBgFlower}></span>
         <div className={styles.mottoText}>
-            "Being different is just another way of being."
+          <p>Luma, if you read this: please help me finding a sentence to add here :)</p>
         </div>
         <span className={styles.mottoBgFlower}></span>
       </div>

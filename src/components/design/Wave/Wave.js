@@ -3,7 +3,7 @@ import styles from "./Wave.module.css";
 import clsx from "clsx";
 
 export default function Wave({ 
-  className = "",
+  extraClassName = "",
   variant = "rosa", 
 }) {
   const gradientId = useId();
@@ -18,7 +18,7 @@ export default function Wave({
 
   return (
     <svg
-      className={clsx(styles.wave, className)}
+      className={clsx(styles.wave, extraClassName)}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 782 273"
       aria-hidden="true"
