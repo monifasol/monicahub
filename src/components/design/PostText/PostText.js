@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./PostText.module.css";
+import clsx from "clsx";
 
 export default function PostText({
   href,
@@ -11,13 +12,13 @@ export default function PostText({
   className = "",
 }) {
   return (
-    <div className={`${styles.post} ${className}`.trim()}>
+    <div className={clsx(styles.post, className)}>
       <div className={styles.textWrapper}>
         <Link
           href={href}
           target={target}
           rel={rel}
-          className={`${styles.postTitle} ${styles.aButton}`}
+          className={styles.postTitle}
         >
           {title}
         </Link>

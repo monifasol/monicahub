@@ -1,0 +1,42 @@
+.sectionHead {
+  width: 100%;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.sectionTitle {
+  font-size: 2.1em;
+  margin: 30px 0 50px 0;
+  color: #2C2C2C;
+  line-height: 1.3em;
+  font-family: var(--font-title);
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0em;
+}
+.sectionSubtitle  {
+  text-align: center;
+  margin: 30px 0;
+}
+
+
+@media all and (min-width: 600px) {
+  .sectionTitle {
+    margin: 30px 0 0;
+  }
+}
+
+@media all and (min-width: 960px) {
+  .sectionTitle {
+    margin: 40px 0 0;
+  }
+  .sectionHead {
+    width: 80%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .sectionHead {
+    width: 800px;
+  }
+}

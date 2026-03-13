@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Post.module.css";
+import clsx from "clsx";
 
 export default function Post({
   href,
@@ -17,7 +18,7 @@ export default function Post({
       href={href}
       target={target}
       rel={rel}
-      className={`${styles.post} ${styles.aButton} ${className}`.trim()}
+      className={clsx(styles.post, className)}
     >
       <div className={styles.imgWrapper}>
         <Image

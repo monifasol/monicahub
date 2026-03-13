@@ -2,7 +2,8 @@ import styles from "./Illustration.module.css";
 import sharedStyles from "../shared.module.css";
 import clsx from "clsx";
 import Link from "next/link";
-import SectionDescription from "../SectionDescription/SectionDescription";
+import BoxDescription from "../BoxDescription/BoxDescription";
+import SectionHead from "../SectionHead/SectionHead";
 import IllustrationPost from "./IllustrationPost";
 
 export default function Illustration() {
@@ -48,20 +49,20 @@ export default function Illustration() {
 
   return (
         <section className={clsx(sharedStyles.section, styles.sectionIllustration)} id="sectionIllustration">
-            <div>
-              <h2>Illustration · Vectorial design</h2>
+            
+            <SectionHead 
+              title="Illustration"
+              subtitle="Keen on children's style and cartoons. Icons for apps or websites, logos, illustrations. Anything that can be drawn by hand can also be vectorized and used in our designs."
+            />
 
-              <SectionDescription
-                title="Keen on childrens' style and cartoons." 
-                variant="peach">
-                  In my spare time, I like to design - anything! 
-                  Icons for apps or websites, logos, illustrations.
-                  Anything that can be drawn by hand can also be vectorized and used in our designs.
-                  <br/>I specially enjoy joining drawing challenges and sharing my growing process in this 
-                  <a href="http://www.instagram.com/moni.ca.art" target="_blank">Instagram account</a>dedicated to it. 
-                  There's an amazing and supportive artists community out there!
-              </SectionDescription>
-            </div>
+            <BoxDescription
+              title="Keen on children's style and cartoons." 
+              variant="peach">
+                In my spare time, I like to design. Anything! 
+                I specially enjoy joining drawing challenges and sharing my growing process in this 
+                <a className={sharedStyles.link} href="http://www.instagram.com/moni.ca.art" target="_blank"> Instagram account</a> dedicated to it. 
+                There's an amazing and supportive artists community out there!
+            </BoxDescription>
 
             <div>
               <div className={styles.illustrationFeedInstagram}>
@@ -77,8 +78,10 @@ export default function Illustration() {
               </div>
             </div>
 
-            <Link className={styles.aButton} target="_blank" href="http://www.instagram.com/moni.ca.art">
-              <div className={sharedStyles.projectButton}>See full Instagram feed!</div>
+            <Link
+              className={sharedStyles.theButton}
+              target="_blank" href="http://www.instagram.com/moni.ca.art">
+                See full Instagram feed!
             </Link>
         </section>
   );

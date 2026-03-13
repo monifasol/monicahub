@@ -17,14 +17,12 @@
 }
 
 .post .postTitle {
-  color: #FB8096;
-  letter-spacing: 0.02em;
+  color: var(--colorRoseDark);
   margin: 10px 0;
-  font-family: "Quattrocento", serif;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 .post .postTitle:hover {
-  color: black;
+  color: var(--colorRose);
 }
 .post .postSubtitle {
   margin-top: 0px;

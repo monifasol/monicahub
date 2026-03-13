@@ -16,14 +16,13 @@
   text-align: left;
 }
 .post .postTitle {
-  color: #FB8096;
-  letter-spacing: 0.02em;
+  color: var(--colorRoseDark);
   margin: 10px 0;
-  font-family: "Quattrocento", serif;
-  font-size: 1.3em;
+  font-family: var(--font-main);
+  font-size: 1.2em;
 }
 .post .postTitle:hover {
-  color: black;
+  color: var(--colorRose);
 }
 .post .postSubtitle {
   margin-top: 0px;
@@ -81,7 +80,8 @@
 
 @media all and (min-width: 1200px) {
   .post {
-    flex: 0 1 470px;
+    flex: 0 1 43%;
     margin: 0px 30px 52px 30px;
+    max-width: 470px;
   }
 }

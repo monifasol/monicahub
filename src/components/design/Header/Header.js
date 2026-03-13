@@ -13,7 +13,7 @@ export default function Header() {
       
       {/* menu Desktop */}
       <nav className={styles.menuDesktop}>
-        <Link href="/" className={styles.aButton}>
+        <Link href="/">
           <div className={styles.headFacingRight}></div>
         </Link>
 

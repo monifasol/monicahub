@@ -1,9 +1,12 @@
 import styles from "./Projects.module.css";
 import sharedStyles from "../shared.module.css";
-import SectionDescription from "../SectionDescription/SectionDescription";
+import BoxDescription from "../BoxDescription/BoxDescription";
+import SectionHead from "../SectionHead/SectionHead";
+import ProjectHead from "../ProjectHead/ProjectHead";
 import Separator from "../Separator/Separator";
 import Quote from "../Quote/Quote";
 import Post from "../Post/Post";
+import Link from "next/link";
 import clsx from "clsx";
 
 export default function Projects() {
@@ -51,16 +54,19 @@ export default function Projects() {
   return (
         <section className={clsx(sharedStyles.section, styles.sectionProjects)} id="sectionProjects">
 
-          <h2>Projects UX/UI Design</h2>
+          <SectionHead 
+            title="Projects UX/UI Design"
+            subtitle="A selection of projects and case studies about UX/UI Design, Design Thinking, and User-Centered Design."
+          />
 
-          <SectionDescription
-            title="UX Design, Design Thinking, Case Studies, UI Design" 
+          <BoxDescription
+            title="Empathize, Define, Ideate, Prototype, Test, Repeat" 
             variant="rose">
-              Empathize, Define, Ideate, Prototype, Test, Repeat. Tackling problems from the point of view of a designer with Design Thinking
-              and a user-centered approach. <br/>
-              Interviews, surveys, user research methods, assumptions, validations, Personas, problem statements.
-              Moodboards, style tiles, design systems, UI design for mobile apps and desktop, interactive prototypes
-          </SectionDescription>
+              Tackling problems from the point of view of a designer and a user-centered approach
+              through the Design Thinking process.
+              Research through interviews, surveys, user research methods, assumptions, validations, Personas, problem statements.
+              Design of moodboards, style tiles, design systems, UI design for mobile apps and desktop, interactive prototypes
+          </BoxDescription>
 
           <div className={styles.quotes}>
             <Quote author="Antoine de Saint-Exupéry">
@@ -72,39 +78,69 @@ export default function Projects() {
             </Quote>
           </div>
 
-          {/* Project Mes Amis */}
 
-          <h2>UI Design of an app for children</h2>
+          <Separator />
+
+          {/* Project: Online Game Save Piggy */}
+
+          <div className={styles.sectionWeb} id="sectionWeb">
+
+            <ProjectHead
+              title="Project: Online Game Save Piggy"
+              subtitle="Vanilla Javascript (ES6), HTML5, CSS3, animations"
+            />
+
+            <BoxDescription 
+              title="An Online Game: Save Piggy from the butcher!"
+              variant="green"> 
+              {/* variant green does not work !! */}
+                Game for the browser to train DOM manipulation, Javascript classes and objects, 
+                developed in HTML5, CSS3 animations, and Vanilla Javascript (ES6).
+                The game consists in saving the pig from the butcher. Dodge the knives thrown from the sky, 
+                while collecting fruits from the field on his way.
+            </BoxDescription>
+
+            <div className={clsx(styles.showcase, styles.web, styles.piggy)}>
+                <img src="/design/img/showcase/piggy1.png"/>
+                <img src="/design/img/showcase/piggy2.png"/>
+                <img src="/design/img/showcase/piggy3.png"/>
+                <img src="/design/img/showcase/piggy4.png"/>
+            </div>
+          </div>
+
+          <Separator />
+
+          {/* Project: Mes Amis */}
             
           <div className={styles.projectWrapper}>
 
-            <h3 className={styles.projectTitle}>
-              Project: Mes Amis <small>["my friends"]</small>
-              <span className={styles.projectTitleSummary}>
-                Mes Amis: UX/UI Design for a language mobile app for kids.
-              </span>
-            </h3>
+            <ProjectHead
+              title="Project: Mes Amis"
+              subtitle="User Research and UI Design of an app for children to learn a new language while having fun."
+            />
 
-            <div className={styles.projectDescription}>
-              <img className={styles.logo} src="/design/img/design/mesamis-logo.png" />
-
-              <div className={styles.projectText}>
-                <p>Save animals while learning a language!</p>
+            <BoxDescription 
+              title="Save animals while learning a language!"
+              variant="orange"
+              image="/design/img/design/mesamis-logo.png"
+              imageAlt="Mes Amis logo"
+              imageWidth={150}
+              imageHeight={150}
+            >
                 <p>
-                  The project started with just an idea and a blank paper: 
+                  The project <b>Mes Amis</b> ('my friends' in French) started with just an idea and a blank paper: 
                   "Design of an app for children to learn a new language while having fun."
                   After a UX research, interviews, and user and market research, 
                   these are the high fidelity design screens for the mobile app for kids. 
                 </p>
                 <p>
                   For the complete Case Study, interactive prototype, full set of screens,
-                  and the whole UX and UI process, visit this
-                  <a target="_blank" href="https://bootcamp.uxdesign.cc/case-study-designing-a-language-app-for-kids-1f2908430211">
-                    Medium article
-                  </a>.
+                  and the whole UX and UI process, visit 
+                  the <a target="_blank" className={sharedStyles.link} href="https://bootcamp.uxdesign.cc/case-study-designing-a-language-app-for-kids-1f2908430211">
+                    Medium article.
+                  </a> I wrote about it.
                 </p>
-              </div>
-            </div>
+            </BoxDescription>
           </div>
 
           <div className={styles.projectShowcaseDesign}>
@@ -119,51 +155,19 @@ export default function Projects() {
             <img src="/design/img/design/mes-amis-group-screens.png"/>
           </div>
 
-          <a className={styles.aButton} target="_blank" href="https://bootcamp.uxdesign.cc/case-study-designing-a-language-app-for-kids-1f2908430211">
-            <div className={styles.projectButton}>Read Case Study</div>
-          </a>
+          <Link 
+            className={sharedStyles.theButton}
+            target="_blank"
+            href="https://bootcamp.uxdesign.cc/case-study-designing-a-language-app-for-kids-1f2908430211">
+              Read Case Study
+          </Link>
 
           <Separator />
 
-          {/* Online Game Save Piggy */}
-
-          <div className={styles.sectionWeb} id="sectionWeb">
-
-            <h2>An Online Game
-              <span className={styles.subH2}>(Vanilla Javascript (ES6), HTML5, CSS3, animations)</span>
-            </h2>
-
-            <div>
-
-              <div className={styles.project}>
-                <p className={styles.projectTitle}>Save Piggy from the Butcher! </p>
-                
-                <p>              
-                  Game for the browser to train DOM manipulation, Javascript classes and objects, 
-                  developed in HTML5, CSS3 animations, and Vanilla Javascript (ES6).
-                  The game consists in saving the pig from the butcher. Dodge the knives thrown from the sky, 
-                  while collecting fruits from the field on his way.
-                </p>
-              </div>
-
-              <div className={clsx(styles.showcase, styles.web, styles.piggy)}>
-                  <img src="/design/img/showcase/piggy1.png"/>
-                  <img src="/design/img/showcase/piggy2.png"/>
-                  <img src="/design/img/showcase/piggy3.png"/>
-                  <img src="/design/img/showcase/piggy4.png"/>
-              </div>
-            </div>
-          </div>
-
-          <Separator />
-
-          <div>
-            <h3 className={styles.subTitle}>Writing about it all: UX Articles and Case Studies</h3>
-
-            <p className={styles.titleExplanation}>
-              These below are my favorite case studies and articles about anything related to UX.
-            </p>
-          </div>
+          <ProjectHead
+            title="UX Articles and Case Studies"
+            subtitle="Writing about it all. These below are my favorite case studies and articles about anything related to UX."
+          />
 
           <div className={styles.posts}>
 

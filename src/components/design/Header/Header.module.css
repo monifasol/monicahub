@@ -18,7 +18,7 @@
 }
 .header.scrolled {
   background-color: #FFEFF2;
-  box-shadow: 0px 8px 40px 0px #FFD2D7;
+  box-shadow: 0px 8px 40px 0px var(--colorRoseLight);
   height: 90px;
 }
 .header.scrolled .menuDesktop {
@@ -64,7 +64,7 @@
   display: flex;
   flex-direction: column;
   color: #444444;
-  font-family: "Quattrocento", serif;
+  font-family: var(--font-main);
   font-size: 0.9em;
   font-weight: normal;
   margin: 8px 10px 8px 0;
@@ -91,7 +91,7 @@
 }
 .menuDesktop .wrapperItemsMenu .itemMenu:hover:nth-child(1n):after,
 .menuDesktop .wrapperItemsMenu .itemMenu.active:nth-child(1n):after {
-  background-color: #FFD2D7;
+  background-color: var(--colorRoseLight);
 }
 .menuDesktop .wrapperItemsMenu .itemMenu:hover:nth-child(2n):after,
 .menuDesktop .wrapperItemsMenu .itemMenu.active:nth-child(2n):after {

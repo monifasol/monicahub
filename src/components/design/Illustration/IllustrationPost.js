@@ -11,7 +11,7 @@ export default function IllustrationPost({
     <Link
       href={href}
       target="_blank"
-      className={clsx(styles.wrapperIllus, styles.aButton)}
+      className={styles.wrapperIllus}
     >
       <img
         src={imageSrc}

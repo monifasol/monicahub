@@ -17,17 +17,6 @@ import Contact from "@/components/design/Contact/Contact";
 export default function DesignPage() {
   return (
     <main className={styles.designPage} lang="en">
-      {/* <iframe
-        src="/design/index.html"
-        title="Visual Craft"
-        aria-description="A creative playground for digital art, interfaces, and visual experiments."
-        style={{
-          width: "100%",
-          height: "100vh",
-          border: "none"
-        }} */}
-
-      {/* <LoadingPage /> */}
 
       <div className={styles.progressBar}></div>
 
@@ -51,13 +40,13 @@ export default function DesignPage() {
 
         <Wave className="wave" variant="rosa" />
 
-        <RevealOnScroll delay={120}>
-          <Hello />
-        </RevealOnScroll>
+        <Hello />
 
         <Wave className="wave waveFlipped" variant="green" />
 
-        <Projects />
+        <RevealOnScroll delay={120}>
+          <Projects />
+        </RevealOnScroll>
 
         <Wave className="wave waveFlipped" variant="peach" />
 

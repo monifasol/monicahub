@@ -8,10 +8,10 @@
   align-items: center;
   min-height: 100vh;
   z-index: 9999;
-  background: #ffd2d7;
-  background: -moz-linear-gradient(0deg, #FFD2D7 0%, #FFF0E7 50%, #DEFDF6 100%);
-  background: -webkit-linear-gradient(0deg, #FFD2D7 0%, #FFF0E7 50%, #DEFDF6 100%);
-  background: linear-gradient(0deg, #FFD2D7 0%, #FFF0E7 50%, #DEFDF6 100%);
+  background: var(--colorRoseLight);
+  background: -moz-linear-gradient(0deg, var(--colorRoseLight) 0%, #FFF0E7 50%, #DEFDF6 100%);
+  background: -webkit-linear-gradient(0deg, var(--colorRoseLight) 0%, #FFF0E7 50%, #DEFDF6 100%);
+  background: linear-gradient(0deg, var(--colorRoseLight) 0%, #FFF0E7 50%, #DEFDF6 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffd2d7",endColorstr="#defdf6",GradientType=1);
 }
 .designPage #loader .loading {

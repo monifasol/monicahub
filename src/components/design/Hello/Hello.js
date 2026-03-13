@@ -1,15 +1,18 @@
 import styles from "./Hello.module.css";
 import sharedStyles from "../shared.module.css";
+import SectionHead from "../SectionHead/SectionHead";
 import clsx from "clsx";
 
 export default function Hello() {
   return (
     <section className={clsx(sharedStyles.section, styles.sectionHello)} id="sectionHello">
 
-      <h2>Hello!</h2>
+      <SectionHead
+        title="Hello!"
+        subtitle="Creating is simply part of how I move through the world."
+      />
 
       <p>
-        Creating is simply part of how I move through the world.
         Almost every day I make something: a drawing, a small interface, a song, a recipe, an idea, a plan.
         It is my way of expressing myself, connecting with others, learning, making sense of things, having fun, and being alive. 
       </p>

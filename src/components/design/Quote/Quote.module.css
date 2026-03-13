@@ -12,7 +12,7 @@
 }
 .quote .blockquote:before,
 .quote .blockquote:after {
-  color: #FFD2D7;
+  color: var(--colorRoseLight);
   font-size: 4em;
   line-height: 0.1em;
   margin-right: 0.25em;

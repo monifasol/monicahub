@@ -1,7 +1,8 @@
 
 import styles from "./Writing.module.css";
 import sharedStyles from "../shared.module.css";
-import SectionDescription from "../SectionDescription/SectionDescription";
+import BoxDescription from "../BoxDescription/BoxDescription";
+import SectionHead from "../SectionHead/SectionHead";
 import PostText from "../PostText/PostText";
 import clsx from "clsx";
 
@@ -91,21 +92,24 @@ export default function Writing() {
   return (
     <section className={clsx(sharedStyles.section, styles.sectionWriting)} id="sectionWriting">
 
-      <h2>Also some personal writing</h2>
-    
-      <SectionDescription
-        title="Writing as my creativity nourisher." 
-        variant="rose">
-          Writing is the closest thing I have to meditation. 
-          It is a real fuel for my creativity and awakens life awareness. 
-          I write about experiences and feelings, people I love, thoughts, .
-          <br/>
-          By writing I talk to myself and to others, I learn from mistakes, release, reflect, deepen, observe, rearrange, understand.            
+      <SectionHead 
+        title="Also some personal writing"
+        subtitle="Writing as my creativity nourisher."
+      />
 
-          For more stories, I host them all under my
-          <a href="https://medium.com/@monifasol">Medium profile</a>,
+      <BoxDescription
+        title="Writing is the closest thing I have to meditation."
+        variant="rose">
+          The real fuel for my creativity and awakens life awareness. 
+          I write about experiences and feelings, people I love, thoughts...  
+          By writing I talk to myself and to others, I learn from mistakes, 
+          release, reflect, deepen, observe, rearrange, understand.  
+          <br />
+          Below you can find a selection of my personal writing,
+          and if you want to read more, I host them all under
+          my <a className={sharedStyles.link} href="https://medium.com/@monifasol">Medium profile</a>,
           where I write regularly.
-        </SectionDescription>
+        </BoxDescription>
 
       <div className={styles.postsWriting}>
 
