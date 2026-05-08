@@ -7,38 +7,37 @@
   visibility: hidden;
 } */
 
-  .hero .name {
-    width: 100%;
-    height: 130px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: end;
-    align-content: center;
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.5s 0s ease-out;
-    margin-top: 24px;
-  }
-  .hero .name .letter {
-    width: auto;
-    height: 74%;
-  }
-  .hero .name .letter.first {
-    height: 90%;
-  }
-  .hero .name .letter.high {
-    height: 100%;
-  }
-  .hero .name .letter img {
-    height: 100%;
-  }
-
+.hero .name {
+  width: 100%;
+  height: 130px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-content: center;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s 0s ease-out;
+  margin-top: 24px;
+}
+.hero .name .letter {
+  width: auto;
+  height: 74%;
+}
+.hero .name .letter.first {
+  height: 90%;
+}
+.hero .name .letter.high {
+  height: 100%;
+}
+.hero .name .letter img {
+  height: 100%;
+}
 
 .hero .motto {
   width: 100%;
-  margin: 40px auto;
+  margin: 60px auto 40px;
   padding-left: 20px;
   display: flex;
   justify-content: center;
@@ -51,8 +50,8 @@
 .hero .mottoBgFlower {
   background-size: contain;
   background-repeat: no-repeat;
-  width: 60px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   margin: 0 10px;
 }
 .hero .mottoBgFlower:nth-child(1) {
@@ -69,15 +68,14 @@
   }
   
   .hero .motto {
+    margin: 70px auto 40px;
     width: 80%;
     padding-left: 30px;
   }
-  .hero .mottoText, .hero .mottoBgFlower {
-    margin-top: 30px;
-  }
   .hero .mottoBgFlower {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    margin: 0 16px;
   }
 }
 
@@ -92,10 +90,6 @@
     width: 100%;
     padding-left: 50px;
   }
-  .hero .mottoBgFlower {
-    width: 30px;
-    height: 30px;
-  }
 }
 
 @media all and (min-width: 960px) {
@@ -103,8 +97,8 @@
     margin: 54px auto 0;
     height: 210px;
   }
-  .hero .mottoText, .hero .mottoBgFlower {
-    margin-top: 50px;
+  .hero .motto {
+    margin: 120px auto 30px;
   }
 }
 
