@@ -1,10 +1,15 @@
 export default function TechPage() {
   return (
-    <div>
-      <h1 style={{ fontFamily: "var(--serif)", marginTop: 0 }}>Tech & Product</h1>
-      <p style={{ color: "var(--muted)" }}>
-        CV, experience, selected projects, and how you like to work.
-      </p>
-    </div>
+    <main style={{ height: "100vh" }}>
+      <iframe
+        src="/tech/tech.html"
+        style={{
+          width: "100%",
+          height: "100%",
+          border: "none",
+        }}
+        title="Tech prototype"
+      />
+    </main>
   );
 }

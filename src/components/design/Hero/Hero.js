@@ -40,7 +40,7 @@ export default function Hero() {
       <div className={`${styles.motto} ${styles.overTheFold}`}>
         <span className={styles.mottoBgFlower}></span>
         <div className={styles.mottoText}>
-          <p>Luma, if you read this: please help me finding a sentence to add here :)</p>
+          <p>Care can be designed.</p>
         </div>
         <span className={styles.mottoBgFlower}></span>
       </div>

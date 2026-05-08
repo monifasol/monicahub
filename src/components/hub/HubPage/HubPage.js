@@ -22,14 +22,14 @@ export default function HubPage() {
           <LinkCard
             title="Tech Projects"
             description="Frontend · AI · product thinking"
-            href="#"
+            href="/tech"
             illustration="/illustrations/tech.png"
           />
 
           <LinkCard
             title="Vecina Digital"
             description="Human-centered websites"
-            href="#"
+            href="https://vecinadigital.com"
             illustration={"/illustrations/vecina.png"}
           />
 
@@ -51,7 +51,7 @@ export default function HubPage() {
           <LinkCard
             title="Writing"
             description="Essays, ideas, reflections"
-            href="#"
+            href="https://medium.com/@monifasol"
             illustration={"/illustrations/writing.png"}
           />
 
@@ -65,7 +65,7 @@ export default function HubPage() {
           <LinkCard
             title="Brilla Books"
             description="Creative publishing"
-            href="#"
+            href="https://brillabooks.com"
             illustration={"/illustrations/brilla.png"}
           />
 
@@ -76,7 +76,7 @@ export default function HubPage() {
           <LinkCard
             title="Self-care"
             description="Rituals & reflection"
-            href="#"
+            href="https://monicasaiz.ringana.com/"
             illustration={"/illustrations/selfcare.png"}
           />
 
