@@ -6,11 +6,11 @@ export default function Header(){
     <header className={styles.header}>
 
       <Image
-        src="/monica-portrait.png"
-        alt="Monica portrait"
+        src="/monica-avatar.png"
+        alt="Monica avatar"
         className={styles.avatar}
-        width={200}
-        height={200}
+        width={230}
+        height={230}
       />
       
       <h1 className={styles.name}>Mónica Saiz</h1>
@@ -18,7 +18,7 @@ export default function Header(){
       <p className={styles.tagline}>
         creación · tecnología · sensibilidad · propósito · conexión
       </p>
-
+      
     </header>
   );
 }

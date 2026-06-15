@@ -1,6 +1,10 @@
 
 .hubPage {
   /* hub page variables */
+
+  --main-font: 400 1.1rem/1.4 var(--font-instrument-sans), sans-serif;
+  --special-font: 600 1.8rem/1.4 var(--font-fraunces), serif;
+
   --bg: #F7F0EB;
   --card: #FFFDFC;
 
@@ -22,7 +26,9 @@
   --accent-contrast-dark: color-mix(in srgb, var(--accent-contrast) 75%, black);
 
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; */
+  font: var(--main-font);
   color: var(--ink);
   line-height: 1.55;
 

@@ -38,7 +38,7 @@ export default function HubPage() {
 
           <LinkCard
             title="Vecina Digital"
-            description="Human-centered websites for local, personal, meaningful projects."
+            description="Human-centered websites for meaningful local projects."
             href="https://vecinadigital.com"
             illustration={"/illustrations/vecina.png"}
           />
