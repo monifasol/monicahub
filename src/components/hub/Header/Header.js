@@ -4,6 +4,7 @@ import Image from "next/image";
 export default function Header(){
   return (
     <header className={styles.header}>
+
       <Image
         src="/monica-portrait.png"
         alt="Monica portrait"
@@ -11,12 +12,13 @@ export default function Header(){
         width={200}
         height={200}
       />
-
+      
       <h1 className={styles.name}>Mónica Saiz</h1>
 
       <p className={styles.tagline}>
-        creación · intuición · emoción · conexión
+        creación · tecnología · sensibilidad · propósito · conexión
       </p>
+
     </header>
   );
 }

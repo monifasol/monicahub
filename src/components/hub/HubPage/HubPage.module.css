@@ -1,16 +1,22 @@
+
 .hubPage {
   /* hub page variables */
-  --bg: #F6EFEA;
-  --card: #FFFFFF;
-  --accent: #C89A9A;
+  --bg: #F7F0EB;
+  --card: #FFFDFC;
+
+  --accent: #C98F91;
   --accent-soft: #E7C4C4;
-  --accent-contrast: #6F9A7C;
+  --accent-contrast: #5F7D6A;
+
+  --moon-blue: #8FA9C6;
+  --soft-gold: #D8B56D;
+
   --ink: #2A2323;
   --muted: #6E6161;
-  --line: rgba(42,35,35,0.10);
-
+  
+  --line: rgba(42, 35, 35, 0.11);
   --radius: 18px;
-  --shadow: 0 6px 18px rgba(42,35,35,0.06);
+  --shadow: 0 18px 45px rgba(60, 45, 40, 0.08);
 
   /* Take the accent color and mix 25% black into it, so: 75% green 25% black */
   --accent-contrast-dark: color-mix(in srgb, var(--accent-contrast) 75%, black);
@@ -42,15 +48,31 @@
   background:
     radial-gradient(circle at 12% 22%, var(--accent) 0 1.2px, transparent 3px),
     radial-gradient(circle at 78% 18%, var(--accent) 0 1px, transparent 2px),
-    radial-gradient(circle at 88% 62%, var(--accent) 0 1.4px, transparent 3px),
-    radial-gradient(circle at 12% 96%, var(--accent) 0 1px, transparent 2px),
-    radial-gradient(circle at 2% 46%, var(--accent) 0 1.2px, transparent 3px),
+    radial-gradient(circle at 88% 62%, var(--soft-gold) 0 1.4px, transparent 3px),
+    radial-gradient(circle at 12% 96%, var(--moon-blue) 0 1px, transparent 2px),
+    radial-gradient(circle at 2% 46%, var(--soft-gold) 0 1.2px, transparent 3px),
 
     radial-gradient(circle at 20% 32%, var(--accent-contrast) 0 1.2px, transparent 2px),
-    radial-gradient(circle at 97% 45%, var(--accent-contrast) 0 1px, transparent 3px),
+    radial-gradient(circle at 97% 45%, var(--moon-blue) 0 1px, transparent 3px),
     radial-gradient(circle at 90% 24%, var(--accent-contrast) 0 1.4px, transparent 2px),
-    radial-gradient(circle at 8% 76%, var(--accent-contrast) 0 1px, transparent 3px),
+    radial-gradient(circle at 8% 76%, var(--soft-gold) 0 1px, transparent 3px),
     radial-gradient(circle at 3% 90%, var(--accent-contrast) 0 1.2px, transparent 2px);
+}
+
+.constellation {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.55;
+
+  background:
+    radial-gradient(circle at 8% 18%, var(--accent) 0 2px, transparent 3px),
+    radial-gradient(circle at 18% 42%, var(--soft-gold) 0 2px, transparent 3px),
+    radial-gradient(circle at 82% 14%, var(--moon-blue) 0 2px, transparent 3px),
+    radial-gradient(circle at 92% 58%, var(--accent-soft) 0 2px, transparent 3px),
+    radial-gradient(circle at 12% 82%, var(--soft-gold) 0 2px, transparent 3px),
+    radial-gradient(circle at 78% 78%, var(--accent) 0 2px, transparent 3px);
 }
 
 .hubPage .topBotanical {
@@ -64,6 +86,8 @@
   height: clamp(48px, 6vw, 64px);
   background-size: auto clamp(48px, 6vw, 60px);
   margin-top: -4px; /* slight overlap to hide any gap at the top */
+
+  display: none;
 }
 
 /* make sure your app content is above dots */
@@ -73,6 +97,6 @@
   position: relative;
   max-width: 620px;
   margin: auto;
-  padding: 70px 24px;
+  padding: 40px 24px;
 }
 
