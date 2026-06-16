@@ -1,7 +1,8 @@
 import styles from "./Header.module.css";
 import Image from "next/image";
 
-export default function Header(){
+export default function Header( { t }){
+  
   return (
     <header className={styles.header}>
 
@@ -11,12 +12,13 @@ export default function Header(){
         className={styles.avatar}
         width={230}
         height={230}
+        loading="eager"
       />
       
-      <h1 className={styles.name}>Mónica Saiz</h1>
+      <h1 className={styles.name}>{t.hub.hero.title}</h1>
 
       <p className={styles.tagline}>
-        creación · tecnología · sensibilidad · propósito · conexión
+        {t.hub.hero.values}
       </p>
       
     </header>

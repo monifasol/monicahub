@@ -1,0 +1,75 @@
+{
+  "hub": {
+    "hero": {
+      "title": "Mónica Saiz",
+      "values": "creation · technology · meaning · purpose · connection",
+      "intro": "Technology, sensitivity, and intentional work coexist here.",
+      "interest": "I'm especially drawn to the intersection of AI, memory, meaning, and human experience.",
+      "welcome": "Welcome to my home.",
+      "browse": "Feel free to come in, explore and poke around."
+    },
+    "sections": {
+      "humanCenteredTechnology": {
+        "title": "Human-centered Technology",
+        "cards": {
+          "whatImBuilding": {
+            "title": "What I'm Building",
+            "description": "Exploring AI, memory, meaning, and what makes us human."
+          },
+          "techProjects": {
+            "title": "Tech Projects",   
+            "description": "Frontend, AI explorations, and product thinking."
+          },
+          "vecinaDigital": {
+            "title": "Vecina Digital",
+            "description": "Human-centered websites for meaningful local projects."
+          }
+        } 
+      },
+      "creativeWork": {
+        "title": "Creative Work",
+        "cards": {
+          "visualCraft": {
+            "title": "Visual Craft",
+            "description": "My creative universe of digital art."
+          },
+          "writing": {
+            "title": "Writing",
+            "description": "Essays, ideas, reflections."
+          },
+          "music": {
+            "title": "Music",
+            "description": "Electronic explorations." 
+          },
+          "brillaBooks": {
+            "title": "Brilla Books",
+            "description": "Creative publishing."
+          }
+        }
+      },
+      "innerWorld": {
+        "title": "Inner World",
+        "cards": {
+          "selfCare": {
+            "title": "Self-care",
+            "description": "Rituals & reflection."
+          }
+        }
+      },
+      "contact": {
+        "title": "Contact",
+        "cards": {
+          "letsTalk": {
+            "title": "Let's talk",
+            "description": "Collaborations & conversations."
+          }
+        }
+      }
+
+    }
+  },
+  "tech": {},
+  "design": {},
+  "common": {}
+}
+

@@ -34,7 +34,7 @@
   font-size: 0.9rem;
   color: rgba(60,52,52,0.60);
   opacity: 1;
-  border-top: solid 1px var(--accent-soft);
+  border-top: solid 1px var(--accent);
 }
 
 .introWelcome {

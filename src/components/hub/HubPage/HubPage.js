@@ -1,57 +1,82 @@
-
+// page.js
+"use client";
+import { useState, useEffect } from "react";
+import { getMessages } from "@/lib/i18n";
 import styles from "./HubPage.module.css"
 import Header from "@/components/hub/Header/Header";
 import Section from "@/components/hub/Section/Section";
 import LinkCard from "@/components/hub/LinkCard/LinkCard";
 import HomeIntro from "@/components/hub/HomeIntro/HomeIntro";
+import LanguageSwitcher from "@/components/hub/LanguageSwitcher/LanguageSwitcher";
 
 export default function HubPage() {
+
+  const [lang, setLang] = useState(() => {
+    if (typeof window === "undefined") {
+      return "en";
+    }
+    return localStorage.getItem("lang") || "en";
+  });
+
+  const t = getMessages(lang);
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("lang");
+
+    if (savedLanguage) {
+      setLang(savedLanguage);
+    }
+  }, []);
+
+  const handleLanguageChange = (newLanguage) => {
+    console.log("Language changed:", newLanguage);
+    setLang(newLanguage);
+  };
 
   return (
     <main className={styles.hubPage}>
 
-      {/* <div className={styles.topBotanical} aria-hidden="true"></div> */}
+      <LanguageSwitcher
+        language={lang}
+        onChange={handleLanguageChange}
+      />
 
       <div className={styles.constellation} aria-hidden="true"></div>
 
       <div className={styles.hubPageContent}>
 
-        <Header />
+        <Header t={t} />
 
-        <HomeIntro />
+        <HomeIntro t={t} />
 
-        <Section title="Human-centered Technology">
+        <Section title={t.hub.sections.humanCenteredTechnology.title}>
           <LinkCard
-            title="What I'm Building"
-            description="Exploring AI, memory, meaning, and what makes us human."
-            // description="Exploring the space where technology meets meaning // also great"
+            title={t.hub.sections.humanCenteredTechnology.cards.whatImBuilding.title}
+            description={t.hub.sections.humanCenteredTechnology.cards.whatImBuilding.description}
             href="/building"
             illustration="/illustrations/creating.png"
           />
 
           <LinkCard
-            title="Tech Projects"
-            description="Frontend, AI explorations, and product thinking."
+            title={t.hub.sections.humanCenteredTechnology.cards.techProjects.title}
+            description={t.hub.sections.humanCenteredTechnology.cards.techProjects.description}
             href="/tech"
             illustration="/illustrations/tech.png"
           />
 
           <LinkCard
-            title="Vecina Digital"
-            description="Human-centered websites for meaningful local projects."
+            title={t.hub.sections.humanCenteredTechnology.cards.vecinaDigital.title}
+            description={t.hub.sections.humanCenteredTechnology.cards.vecinaDigital.description}
             href="https://vecinadigital.com"
             illustration={"/illustrations/vecina.png"}
           />
-
         </Section>
 
-        <Section title="Creative Work">
+        <Section title={t.hub.sections.creativeWork.title}>
 
           <LinkCard
-            title="Visual Craft"
-            description="My creative universe of digital art."
-            // or: "Interfaces, illustration & visual experiments"
-            // or: "A creative playground for digital art, interfaces, and visual experiments."
+            title={t.hub.sections.creativeWork.cards.visualCraft.title}
+            description={t.hub.sections.creativeWork.cards.visualCraft.description}
             href="/design"
             target="_blank"
             rel="noopener noreferrer"
@@ -59,44 +84,44 @@ export default function HubPage() {
           />
 
           <LinkCard
-            title="Writing"
-            description="Essays, ideas, reflections."
+            title={t.hub.sections.creativeWork.cards.writing.title}
+            description={t.hub.sections.creativeWork.cards.writing.description}
             href="https://medium.com/@monifasol"
             illustration={"/illustrations/writing.png"}
           />
 
           <LinkCard
-            title="Music"
-            description="Electronic explorations."
+            title={t.hub.sections.creativeWork.cards.music.title}
+            description={t.hub.sections.creativeWork.cards.music.description}
             href="#"
             illustration={"/illustrations/music.png"}
           />
 
           <LinkCard
-            title="Brilla Books"
-            description="Creative publishing."
+            title={t.hub.sections.creativeWork.cards.brillaBooks.title}
+            description={t.hub.sections.creativeWork.cards.brillaBooks.description}
             href="https://brillabooks.com"
             illustration={"/illustrations/brilla.png"}
           />
 
         </Section>
 
-        <Section title="Inner World">
+        <Section title={t.hub.sections.innerWorld.title}>
 
           <LinkCard
-            title="Self-care"
-            description="Rituals & reflection."
+            title={t.hub.sections.innerWorld.cards.selfCare.title}
+            description={t.hub.sections.innerWorld.cards.selfCare.description}
             href="https://monicasaiz.ringana.com/"
             illustration={"/illustrations/selfcare.png"}
           />
 
         </Section>
 
-        <Section title="Contact">
+        <Section title={t.hub.sections.contact.title}>
 
           <LinkCard
-            title="Let's talk"
-            description="Collaborations & conversations."
+            title={t.hub.sections.contact.cards.letsTalk.title}
+            description={t.hub.sections.contact.cards.letsTalk.description}
             href="#"
             illustration={"/illustrations/contact.png"}
           />

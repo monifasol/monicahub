@@ -1,27 +1,26 @@
 import styles from "./HomeIntro.module.css";
 
-export default function HomeIntro() {
+export default function HomeIntro( { t }) {
+
   return (
 
     <div className={styles.wrap}>
 
       <p className={styles.introText} aria-label="Intro">
-        Aquí conviven la tecnología, la sensibilidad
-        y las cosas hechas con intención.<br />
-        Me interesa especialmente el cruce entre IA, memoria, significado y experiencia humana.
+        {t.hub.hero.intro}
+        <br />
+        {t.hub.hero.interest}
       </p>
 
       <div className={styles.introSeparator}></div>
 
       <div className={styles.introWelcome}>
-        Bienvenida a mi casa.
+        {t.hub.hero.welcome}
       </div>
 
       <p className={styles.introText}>
-        Entra y bichea por donde quieras.
+        {t.hub.hero.browse}
       </p>
-
     </div>
-
   );
 }

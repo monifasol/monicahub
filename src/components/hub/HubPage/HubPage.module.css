@@ -5,7 +5,10 @@
   --main-font: 400 1.1rem/1.4 var(--font-instrument-sans), sans-serif;
   --special-font: 600 1.8rem/1.4 var(--font-fraunces), serif;
 
-  --bg: #F7F0EB;
+  --bg: #FAF3EE;
+  --bg-warm: #F8EDE8;
+  --bg-light: #FFF8F4;
+
   --card: #FFFDFC;
 
   --accent: #C98F91;
@@ -18,12 +21,13 @@
   --ink: #2A2323;
   --muted: #6E6161;
   
-  --line: rgba(42, 35, 35, 0.11);
   --radius: 18px;
   --shadow: 0 18px 45px rgba(60, 45, 40, 0.08);
 
-  /* Take the accent color and mix 25% black into it, so: 75% green 25% black */
+  /* Take a color and mix 25% black into it, so: 75% the color and 25% black */
   --accent-contrast-dark: color-mix(in srgb, var(--accent-contrast) 75%, black);
+  --accent-dark: color-mix(in srgb, var(--accent) 75%, black);
+
 
   margin: 0;
 
@@ -34,9 +38,10 @@
 
   /* discreet gradient */
   background:
-    radial-gradient(900px 620px at 18% 12%, rgba(231,196,196,0.40), rgba(246,239,234,0) 60%),
-    radial-gradient(780px 560px at 86% 28%, rgba(200,154,154,0.22), rgba(246,239,234,0) 62%),
-    linear-gradient(180deg, #FBF7F3 0%, #F6EFEA 60%, #FBF7F3 100%);
+    radial-gradient(circle at 50% 8%, rgba(231, 196, 196, 0.28), transparent 32%),
+    radial-gradient(circle at 85% 45%, rgba(143, 169, 198, 0.12), transparent 28%),
+    radial-gradient(circle at 12% 72%, rgba(216, 181, 109, 0.10), transparent 24%),
+    linear-gradient(180deg, var(--bg-light) 0%, var(--bg) 45%, var(--bg-warm) 100%);
 
   position: relative;
   z-index: 1;
