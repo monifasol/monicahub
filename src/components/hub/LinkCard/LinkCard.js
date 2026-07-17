@@ -1,17 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
+import clsx from "clsx";
 import styles from "./LinkCard.module.css";
 
-export default function LinkCard({ 
-    title, 
-    description, 
-    href, 
-    target,
-    rel,
-    illustration 
+export default function LinkCard({
+  title,
+  description,
+  href,
+  target,
+  rel,
+  illustration,
+  featured = false,
 }) {
   return (
-    <Link href={href} className={styles.card} target={target} rel={rel}>
+    <Link
+      href={href}
+      className={clsx(styles.card, featured && styles.featured)}
+      target={target}
+      rel={rel}
+    >
       {illustration && (
         <div className={styles.illustration}>
           <Image

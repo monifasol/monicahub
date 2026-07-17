@@ -2,68 +2,68 @@
   "hub": {
     "hero": {
       "title": "Mónica Saiz",
-      "values": "creación · tecnología · sentido · intención · conexión",
+      "values": "tecnología · creación · sentido",
       "intro": "Aquí conviven la tecnología, la sensibilidad y las cosas hechas con intención.",
-      "interest": "Me interesa especialmente el cruce entre IA, memoria, significado y experiencia humana.",
-      "welcome": "Bienvenida a mi casa.",
-      "browse": "Entra y bichea por donde quieras."
+      "welcome": "Bienvenida a mi casa."
     },
     "sections": {
       "humanCenteredTechnology": {
-        "title": "Tecnología Human-centered",
+        "title": "Tecnología con sentido",
         "cards": {
           "whatImBuilding": {
             "title": "Lo que estoy construyendo",
-            "description": "Explorando IA, memoria, significado y experiencia humana."
+            "description": "Exploraciones de IA, memoria y experiencia humana."
           },
           "techProjects": {
-            "title": "Proyectos de tecnología",  
-            "description": "CV, Frontend, explorando con IA y pensamiento de producto."
+            "title": "Proyectos de tecnología",
+            "description": "CV, frontend e ideas de producto."
           },
           "vecinaDigital": {
             "title": "Vecina Digital",
             "description": "Webs humanas para proyectos locales con sentido."
           }
-        } 
+        }
       },
       "creativeWork": {
         "title": "Trabajo creativo",
         "cards": {
           "visualCraft": {
             "title": "Artes visuales",
-            "description": "Mi universo creativo de arte digital."
+            "description": "Portfolio de diseño y arte digital."
           },
           "writing": {
             "title": "Escritura",
-            "description": "Ensayos, ideas, reflexiones."
+            "description": "Ensayos e ideas en Medium."
           },
           "music": {
             "title": "Música",
-            "description": "Exploraciones electrónicas." 
+            "description": "Exploraciones electrónicas."
           },
           "brillaBooks": {
             "title": "Brilla Books",
-            "description": "Publicación creativa."
+            "description": "Editorial creativa."
           }
         }
       },
-      "innerWorld": {
-        "title": "Mundo interior",
+      "more": {
+        "title": "Más",
         "cards": {
           "selfCare": {
             "title": "Autocuidado",
-            "description": "Rituales y reflexión."
+            "description": "Rituales y productos Ringana."
           }
         }
       },
       "contact": {
-        "title": "Contacto",
-        "cards": {
-          "letsTalk": {
-            "title": "Hablemos",
-            "description": "Colaboraciones y conversaciones."
-          }
-        }
+        "title": "Hablemos",
+        "subtitle": "Escríbeme si quieres colaborar o simplemente saludar.",
+        "name": "Nombre",
+        "email": "Email",
+        "message": "Mensaje",
+        "submit": "Enviar",
+        "sending": "Enviando…",
+        "success": "¡Gracias! Te he enviado una copia y te respondo pronto.",
+        "error": "No se pudo enviar. Inténtalo de nuevo."
       }
     }
   },

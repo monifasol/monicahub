@@ -1,0 +1,140 @@
+.section {
+  margin-top: 52px;
+  margin-bottom: 24px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.title {
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent-contrast-dark);
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 2px;
+  margin-top: 8px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+.line {
+  height: 1px;
+  flex: 1;
+  background: var(--accent);
+}
+
+.subtitle {
+  margin: 0 0 22px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 22px 20px 20px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #fffdfc 0%, #fbf7f3 100%);
+  border: 1px solid rgba(47, 41, 41, 0.08);
+  box-shadow: 0 18px 45px rgba(60, 45, 40, 0.08);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: rgba(60, 52, 52, 0.72);
+}
+
+.input,
+.textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(47, 41, 41, 0.12);
+  background: rgba(255, 253, 252, 0.92);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: rgba(95, 125, 106, 0.55);
+  box-shadow: 0 0 0 3px rgba(95, 125, 106, 0.14);
+}
+
+.submit {
+  align-self: flex-start;
+  margin-top: 4px;
+  padding: 11px 22px;
+  border: none;
+  border-radius: 12px;
+  background: var(--accent-contrast);
+  color: #fff;
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease, opacity 0.15s ease;
+}
+
+.submit:hover:not(:disabled) {
+  background: var(--accent-contrast-dark);
+  transform: translateY(-1px);
+}
+
+.submit:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.submit:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.feedbackSuccess,
+.feedbackError {
+  margin: 2px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.feedbackSuccess {
+  color: var(--accent-contrast-dark);
+}
+
+.feedbackError {
+  color: #9a4a4a;
+}

@@ -47,45 +47,6 @@
   z-index: 1;
 }
 
-/* floating dots layer */
-.hubPage::before{
-  content:"";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.8;
-
-  background:
-    radial-gradient(circle at 12% 22%, var(--accent) 0 1.2px, transparent 3px),
-    radial-gradient(circle at 78% 18%, var(--accent) 0 1px, transparent 2px),
-    radial-gradient(circle at 88% 62%, var(--soft-gold) 0 1.4px, transparent 3px),
-    radial-gradient(circle at 12% 96%, var(--moon-blue) 0 1px, transparent 2px),
-    radial-gradient(circle at 2% 46%, var(--soft-gold) 0 1.2px, transparent 3px),
-
-    radial-gradient(circle at 20% 32%, var(--accent-contrast) 0 1.2px, transparent 2px),
-    radial-gradient(circle at 97% 45%, var(--moon-blue) 0 1px, transparent 3px),
-    radial-gradient(circle at 90% 24%, var(--accent-contrast) 0 1.4px, transparent 2px),
-    radial-gradient(circle at 8% 76%, var(--soft-gold) 0 1px, transparent 3px),
-    radial-gradient(circle at 3% 90%, var(--accent-contrast) 0 1.2px, transparent 2px);
-}
-
-.constellation {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.55;
-
-  background:
-    radial-gradient(circle at 8% 18%, var(--accent) 0 2px, transparent 3px),
-    radial-gradient(circle at 18% 42%, var(--soft-gold) 0 2px, transparent 3px),
-    radial-gradient(circle at 82% 14%, var(--moon-blue) 0 2px, transparent 3px),
-    radial-gradient(circle at 92% 58%, var(--accent-soft) 0 2px, transparent 3px),
-    radial-gradient(circle at 12% 82%, var(--soft-gold) 0 2px, transparent 3px),
-    radial-gradient(circle at 78% 78%, var(--accent) 0 2px, transparent 3px);
-}
-
 .hubPage .topBotanical {
   width: 100%;
   background-image: url("/illustrations/botanical-strip.png");
@@ -101,11 +62,9 @@
   display: none;
 }
 
-/* make sure your app content is above dots */
 .hubPage .hubPageContent{
   position: relative;
   z-index: 1;
-  position: relative;
   max-width: 620px;
   margin: auto;
   padding: 40px 24px;

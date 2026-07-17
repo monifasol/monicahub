@@ -22,8 +22,8 @@ const instrumentSans = Instrument_Sans({
 
 
 export const metadata = {
-  title: "Monica Saiz",
-  description: "Bienvenida a mi casa.",
+  title: "Mónica Saiz",
+  description: "Bienvenida a mi casa. Tecnología, creación y sentido.",
 };
 
 export default function RootLayout({ children }) {
