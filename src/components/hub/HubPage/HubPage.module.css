@@ -47,6 +47,12 @@
   z-index: 1;
 }
 
+.brandBar {
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-soft) 48%, var(--accent-contrast) 100%);
+}
+
 .hubPage .topBotanical {
   width: 100%;
   background-image: url("/illustrations/botanical-strip.png");

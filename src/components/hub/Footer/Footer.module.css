@@ -1,0 +1,44 @@
+.footer {
+  margin-top: 56px;
+}
+
+.brandLine {
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--accent) 0%,
+    var(--accent-soft) 48%,
+    var(--accent-contrast) 100%
+  );
+}
+
+.inner {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 36px 24px 48px;
+  text-align: center;
+}
+
+.name {
+  font: var(--special-font);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+
+.tagline {
+  margin: 0 0 16px;
+  font-size: 0.82rem;
+  letter-spacing: 0.4px;
+  color: rgba(60, 52, 52, 0.55);
+}
+
+.copy {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: rgba(60, 52, 52, 0.42);
+}

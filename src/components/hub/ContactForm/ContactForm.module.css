@@ -99,7 +99,7 @@
   padding: 11px 22px;
   border: none;
   border-radius: 12px;
-  background: var(--accent-contrast);
+  background: color-mix(in srgb, var(--accent-contrast) 72%, white);
   color: #fff;
   font: inherit;
   font-size: 0.92rem;
@@ -110,7 +110,7 @@
 }
 
 .submit:hover:not(:disabled) {
-  background: var(--accent-contrast-dark);
+  background: var(--accent-contrast);
   transform: translateY(-1px);
 }
 

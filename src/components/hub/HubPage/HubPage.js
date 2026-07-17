@@ -14,6 +14,7 @@ import LinkCard from "@/components/hub/LinkCard/LinkCard";
 import HomeIntro from "@/components/hub/HomeIntro/HomeIntro";
 import LanguageSwitcher from "@/components/hub/LanguageSwitcher/LanguageSwitcher";
 import ContactForm from "@/components/hub/ContactForm/ContactForm";
+import Footer from "@/components/hub/Footer/Footer";
 
 export default function HubPage() {
   const lang = useSyncExternalStore(
@@ -29,6 +30,8 @@ export default function HubPage() {
 
   return (
     <main className={styles.hubPage}>
+      <div className={styles.brandBar} aria-hidden="true" />
+
       <LanguageSwitcher language={lang} onChange={setLangPreference} />
 
       <div className={styles.hubPageContent}>
@@ -111,6 +114,8 @@ export default function HubPage() {
 
         <ContactForm t={t} />
       </div>
+
+      <Footer t={t} />
     </main>
   );
 }
