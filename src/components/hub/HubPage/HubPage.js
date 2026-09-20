@@ -16,6 +16,18 @@ import LanguageSwitcher from "@/components/hub/LanguageSwitcher/LanguageSwitcher
 import ContactForm from "@/components/hub/ContactForm/ContactForm";
 import Footer from "@/components/hub/Footer/Footer";
 
+const visualCraftGlimpses = [
+  "/design/img/design/monicart4.png",
+  "/design/img/design/monicart1.png",
+  "/design/img/design/mes-amis-group-screens.png",
+];
+
+const brillaGlimpses = [
+  "/hub/glimpses/brilla-guau.webp",
+  "/hub/glimpses/brilla-capibaras.webp",
+  "/hub/glimpses/brilla-lumicornio.webp",
+];
+
 export default function HubPage() {
   const lang = useSyncExternalStore(
     subscribeLang,
@@ -47,6 +59,9 @@ export default function HubPage() {
             }
             href="https://vecinadigital.com"
             illustration="/illustrations/vecina.png"
+            glimpseQuote={
+              t.hub.sections.humanCenteredTechnology.cards.vecinaDigital.glimpse
+            }
             featured
           />
 
@@ -57,6 +72,9 @@ export default function HubPage() {
             }
             href="/tech"
             illustration="/illustrations/tech.png"
+            glimpseQuote={
+              t.hub.sections.humanCenteredTechnology.cards.techProjects.glimpse
+            }
             featured
           />
 
@@ -70,6 +88,9 @@ export default function HubPage() {
             }
             href="/building"
             illustration="/illustrations/creating.png"
+            glimpseQuote={
+              t.hub.sections.humanCenteredTechnology.cards.whatImBuilding.glimpse
+            }
           />
         </Section>
 
@@ -79,6 +100,7 @@ export default function HubPage() {
             description={t.hub.sections.creativeWork.cards.visualCraft.description}
             href="/design"
             illustration="/illustrations/design.png"
+            glimpseImages={visualCraftGlimpses}
           />
 
           <LinkCard
@@ -86,6 +108,7 @@ export default function HubPage() {
             description={t.hub.sections.creativeWork.cards.writing.description}
             href="https://medium.com/@monifasol"
             illustration="/illustrations/writing.png"
+            glimpseQuote={t.hub.sections.creativeWork.cards.writing.glimpse}
           />
 
           <LinkCard
@@ -93,6 +116,7 @@ export default function HubPage() {
             description={t.hub.sections.creativeWork.cards.music.description}
             href="#"
             illustration="/illustrations/music.png"
+            glimpsePulse
           />
 
           <LinkCard
@@ -100,6 +124,8 @@ export default function HubPage() {
             description={t.hub.sections.creativeWork.cards.brillaBooks.description}
             href="https://brillabooks.com"
             illustration="/illustrations/brilla.png"
+            glimpseImages={brillaGlimpses}
+            glimpseStamp="book"
           />
         </Section>
 
@@ -109,6 +135,7 @@ export default function HubPage() {
             description={t.hub.sections.more.cards.selfCare.description}
             href="https://monicasaiz.ringana.com/"
             illustration="/illustrations/selfcare.png"
+            glimpseQuote={t.hub.sections.more.cards.selfCare.glimpse}
           />
         </Section>
 

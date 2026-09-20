@@ -12,15 +12,18 @@
         "cards": {
           "whatImBuilding": {
             "title": "What I'm Building",
-            "description": "Exploring AI, memory, and human experience."
+            "description": "AI · memory · experience",
+            "glimpse": "Still taking shape."
           },
           "techProjects": {
             "title": "Tech Projects",
-            "description": "CV, frontend, and product thinking."
+            "description": "seQura · Pomodora · Moon",
+            "glimpse": "I need things to make sense."
           },
           "vecinaDigital": {
             "title": "Vecina Digital",
-            "description": "Human-centered websites for meaningful local projects."
+            "description": "local businesses · clear websites · closeness",
+            "glimpse": "Your door to the internet — human, and nearby."
           }
         }
       },
@@ -29,19 +32,20 @@
         "cards": {
           "visualCraft": {
             "title": "Visual Craft",
-            "description": "Design and digital art portfolio."
+            "description": "Mes Amis · Save Piggy · illustration"
           },
           "writing": {
             "title": "Writing",
-            "description": "Essays and ideas on Medium."
+            "description": "A Beautiful Goodbye · a quiet moment · Medium",
+            "glimpse": "Writing is the closest thing I have to meditation."
           },
           "music": {
             "title": "Music",
-            "description": "Electronic explorations."
+            "description": "electronic · textures · in progress"
           },
           "brillaBooks": {
             "title": "Brilla Books",
-            "description": "Creative publishing."
+            "description": "GUAU! · Capybaras · Lumicornio"
           }
         }
       },
@@ -50,7 +54,8 @@
         "cards": {
           "selfCare": {
             "title": "Self-care",
-            "description": "Rituals and Ringana products."
+            "description": "rituals · Ringana · calm",
+            "glimpse": "A little time to come back to the body."
           }
         }
       },

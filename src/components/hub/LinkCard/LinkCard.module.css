@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
 
-  padding: 20px 10px 6px;
+  padding: 20px 16px 10px;
   padding-left: clamp(104px, 18vw, 134px); /* Mobile-safe */
 
   margin: 20px 0;
@@ -56,6 +56,7 @@
   inset: 1px;
   border-radius: 21px;
   pointer-events:none;
+  z-index: 0;
   background: linear-gradient(
     135deg,
     rgba(255,255,255,0.70),
@@ -66,11 +67,12 @@
 
 .illustration{
   position: absolute;
-  top: 44%;
+  top: 50%;
   transform: translateY(-50%);
   display: grid;
   place-items: center;
   pointer-events: none;
+  z-index: 2;
 
   /* Mobile-safe */
   left: clamp(-42px, -7vw, -34px);
@@ -104,6 +106,133 @@
 
 .text{
   flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.glimpse{
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows .28s ease, opacity .2s ease;
+}
+
+.glimpseInner{
+  overflow: hidden;
+  min-height: 0;
+}
+
+.stamps{
+  display: flex;
+  align-items: center;
+  padding: 10px 0 6px 4px;
+}
+
+.stamp{
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin-left: -10px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  background: #f6eee8;
+  box-shadow: 0 8px 16px rgba(42, 35, 35, 0.14);
+}
+
+.stamp:first-child{
+  margin-left: 0;
+}
+
+.stampBook{
+  width: 40px;
+  height: 54px;
+  border-radius: 3px 7px 7px 3px;
+  margin-left: -12px;
+}
+
+.stampBook:first-child{
+  margin-left: 0;
+}
+
+.stampBook img{
+  object-position: 50% 78%;
+}
+
+.stamp img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0;
+  filter: none;
+}
+
+.glimpseQuote{
+  margin: 8px 0 2px;
+  font: italic 0.92rem/1.35 var(--font-fraunces), Georgia, serif;
+  color: rgba(60, 52, 52, 0.72);
+}
+
+.pulse{
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 26px;
+  margin: 10px 0 4px;
+}
+
+.pulse span{
+  width: 4px;
+  height: 14px;
+  border-radius: 2px;
+  background: var(--accent);
+  transform-origin: bottom;
+  animation: pulseBar .9s ease-in-out infinite;
+  animation-play-state: paused;
+}
+
+.pulse span:nth-child(2){
+  height: 22px;
+  animation-delay: .15s;
+}
+
+.pulse span:nth-child(3){
+  height: 16px;
+  animation-delay: .3s;
+}
+
+@keyframes pulseBar{
+  0%, 100%{ transform: scaleY(.4); }
+  50%{ transform: scaleY(1); }
+}
+
+@media (hover: hover) and (pointer: fine){
+  .card:hover .glimpse,
+  .card:focus-visible .glimpse{
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+
+  .card:hover .pulse span,
+  .card:focus-visible .pulse span{
+    animation-play-state: running;
+  }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .card,
+  .glimpse,
+  .illustration img{
+    transition: none;
+  }
+
+  .card:hover{
+    transform: none;
+  }
+
+  .pulse span{
+    animation: none;
+  }
 }
 
 .title{
