@@ -8,6 +8,7 @@ export default function LinkCard({
   description,
   href,
   illustration,
+  icon,
   featured = false,
   glimpseImages,
   glimpseQuote,
@@ -26,15 +27,19 @@ export default function LinkCard({
       target={external ? "_blank" : undefined}
       rel={external ? "noopener noreferrer" : undefined}
     >
-      {illustration && (
+      {(illustration || icon) && (
         <div className={styles.illustration}>
-          <Image
-            src={illustration}
-            alt=""
-            width={120}
-            height={120}
-            priority={false}
-          />
+          {illustration ? (
+            <Image
+              src={illustration}
+              alt=""
+              width={120}
+              height={120}
+              priority={false}
+            />
+          ) : (
+            icon
+          )}
         </div>
       )}
 

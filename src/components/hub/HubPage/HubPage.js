@@ -15,6 +15,7 @@ import HomeIntro from "@/components/hub/HomeIntro/HomeIntro";
 import LanguageSwitcher from "@/components/hub/LanguageSwitcher/LanguageSwitcher";
 import ContactForm from "@/components/hub/ContactForm/ContactForm";
 import Footer from "@/components/hub/Footer/Footer";
+import { IconPhoto } from "@/components/hub/icons/icons";
 
 const visualCraftGlimpses = [
   "/design/img/design/monicart4.png",
@@ -101,6 +102,13 @@ export default function HubPage() {
             href="/design"
             illustration="/illustrations/design.png"
             glimpseImages={visualCraftGlimpses}
+          />
+
+          <LinkCard
+            title={t.hub.sections.creativeWork.cards.photography.title}
+            description={t.hub.sections.creativeWork.cards.photography.description}
+            href="https://fotima.art/monifasol"
+            icon={<IconPhoto />}
           />
 
           <LinkCard

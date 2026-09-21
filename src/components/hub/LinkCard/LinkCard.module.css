@@ -41,7 +41,8 @@
   box-shadow: 0 26px 58px rgba(95, 125, 106, 0.16);
 } 
 
-.card:hover .illustration img{
+.card:hover .illustration img,
+.card:hover .illustration svg{
     transform: scale(1.04);
 }
 
@@ -101,6 +102,14 @@
   height: auto;
   padding-top: 8px;
   filter: drop-shadow(0 14px 20px rgba(42,35,35,0.14));
+  transition: transform .2s ease;
+}
+
+.illustration svg{
+  width: clamp(52px, 10vw, 64px);
+  height: auto;
+  color: rgba(60, 52, 52, 0.72);
+  filter: drop-shadow(0 10px 16px rgba(42,35,35,0.12));
   transition: transform .2s ease;
 }
 
@@ -222,7 +231,8 @@
 @media (prefers-reduced-motion: reduce){
   .card,
   .glimpse,
-  .illustration img{
+  .illustration img,
+  .illustration svg{
     transition: none;
   }
 
