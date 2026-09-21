@@ -15,7 +15,6 @@ import HomeIntro from "@/components/hub/HomeIntro/HomeIntro";
 import LanguageSwitcher from "@/components/hub/LanguageSwitcher/LanguageSwitcher";
 import ContactForm from "@/components/hub/ContactForm/ContactForm";
 import Footer from "@/components/hub/Footer/Footer";
-import { IconPhoto } from "@/components/hub/icons/icons";
 
 const visualCraftGlimpses = [
   "/design/img/design/monicart4.png",
@@ -27,6 +26,12 @@ const brillaGlimpses = [
   "/hub/glimpses/brilla-guau.webp",
   "/hub/glimpses/brilla-capibaras.webp",
   "/hub/glimpses/brilla-lumicornio.webp",
+];
+
+const vecinaGlimpses = [
+  "/hub/glimpses/vecina-fotima.webp",
+  "/hub/glimpses/vecina-fredhush.webp",
+  "/hub/glimpses/vecina-chu.webp",
 ];
 
 export default function HubPage() {
@@ -60,6 +65,7 @@ export default function HubPage() {
             }
             href="https://vecinadigital.com"
             illustration="/illustrations/vecina.png"
+            glimpseImages={vecinaGlimpses}
             glimpseQuote={
               t.hub.sections.humanCenteredTechnology.cards.vecinaDigital.glimpse
             }
@@ -108,7 +114,7 @@ export default function HubPage() {
             title={t.hub.sections.creativeWork.cards.photography.title}
             description={t.hub.sections.creativeWork.cards.photography.description}
             href="https://fotima.art/monifasol"
-            icon={<IconPhoto />}
+            illustration="/illustrations/photography.png"
           />
 
           <LinkCard
