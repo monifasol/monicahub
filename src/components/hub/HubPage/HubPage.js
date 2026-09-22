@@ -34,6 +34,12 @@ const vecinaGlimpses = [
   "/hub/glimpses/vecina-chu.webp",
 ];
 
+const photographyGlimpses = [
+  "/hub/glimpses/photo-berlin.webp",
+  "/hub/glimpses/photo-nyc.webp",
+  "/hub/glimpses/photo-lake.webp",
+];
+
 export default function HubPage() {
   const lang = useSyncExternalStore(
     subscribeLang,
@@ -115,6 +121,7 @@ export default function HubPage() {
             description={t.hub.sections.creativeWork.cards.photography.description}
             href="https://fotima.art/monifasol"
             illustration="/illustrations/photography.png"
+            glimpseImages={photographyGlimpses}
           />
 
           <LinkCard
