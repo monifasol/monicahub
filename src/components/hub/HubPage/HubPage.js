@@ -109,6 +109,15 @@ export default function HubPage() {
 
         <Section title={t.hub.sections.creativeWork.title}>
           <LinkCard
+            title={t.hub.sections.creativeWork.cards.brillaBooks.title}
+            description={t.hub.sections.creativeWork.cards.brillaBooks.description}
+            href="https://brillabooks.com"
+            illustration="/illustrations/brilla.png"
+            glimpseImages={brillaGlimpses}
+            glimpseStamp="book"
+          />
+
+          <LinkCard
             title={t.hub.sections.creativeWork.cards.visualCraft.title}
             description={t.hub.sections.creativeWork.cards.visualCraft.description}
             href="/design"
@@ -138,15 +147,6 @@ export default function HubPage() {
             href="#"
             illustration="/illustrations/music.png"
             glimpsePulse
-          />
-
-          <LinkCard
-            title={t.hub.sections.creativeWork.cards.brillaBooks.title}
-            description={t.hub.sections.creativeWork.cards.brillaBooks.description}
-            href="https://brillabooks.com"
-            illustration="/illustrations/brilla.png"
-            glimpseImages={brillaGlimpses}
-            glimpseStamp="book"
           />
         </Section>
 
