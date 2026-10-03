@@ -60,7 +60,7 @@ export default function Illustration() {
               variant="peach">
                 In my spare time, I like to design. Anything! 
                 I specially enjoy joining drawing challenges and sharing my growing process in this 
-                <a className={sharedStyles.link} href="http://www.instagram.com/moni.ca.art" target="_blank"> Instagram account</a> dedicated to it. 
+                <a className={sharedStyles.link} href="http://www.instagram.com/moni.ca.art" target="_blank" rel="noopener noreferrer"> Instagram account</a> dedicated to it. 
                 There's an amazing and supportive artists community out there!
             </BoxDescription>
 
@@ -81,6 +81,7 @@ export default function Illustration() {
             <Link
               className={sharedStyles.theButton}
               target="_blank"
+              rel="noopener noreferrer"
               href="http://www.instagram.com/moni.ca.art">
                 See full Instagram feed!
             </Link>

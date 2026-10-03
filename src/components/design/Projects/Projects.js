@@ -130,7 +130,7 @@ export default function Projects() {
               <p>
                 For the complete Case Study, interactive prototype, full set of screens,
                 and the whole UX and UI process, visit 
-                the <a target="_blank" className={sharedStyles.link} href="https://bootcamp.uxdesign.cc/case-study-designing-a-language-app-for-kids-1f2908430211">
+                the <a target="_blank" rel="noopener noreferrer" className={sharedStyles.link} href="https://bootcamp.uxdesign.cc/case-study-designing-a-language-app-for-kids-1f2908430211">
                   Medium article.
                 </a> I wrote about it.
               </p>
@@ -149,6 +149,7 @@ export default function Projects() {
           <Link 
             className={sharedStyles.theButton}
             target="_blank"
+            rel="noopener noreferrer"
             href="https://bootcamp.uxdesign.cc/case-study-designing-a-language-app-for-kids-1f2908430211">
               Read Case Study
           </Link>

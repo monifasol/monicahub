@@ -11,6 +11,7 @@ export default function IllustrationPost({
     <Link
       href={href}
       target="_blank"
+      rel="noopener noreferrer"
       className={styles.wrapperIllus}
     >
       <img

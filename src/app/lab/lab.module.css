@@ -1,0 +1,208 @@
+.root {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(120, 90, 70, 0.12), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(70, 95, 90, 0.1), transparent 50%),
+    linear-gradient(180deg, #f7f3ee 0%, #efe8df 100%);
+  color: var(--ink);
+  font-family: var(--font-instrument-sans), system-ui, sans-serif;
+}
+
+.shell {
+  width: min(44rem, calc(100% - 2.5rem));
+  margin: 0 auto;
+  padding: 2.5rem 0 4rem;
+}
+
+.shellWide {
+  width: min(52rem, calc(100% - 2.5rem));
+}
+
+.topBar {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+
+.brand a:hover {
+  opacity: 0.75;
+}
+
+.logout {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.logout:hover {
+  color: var(--ink);
+}
+
+.loginWrap {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+}
+
+.loginCard {
+  width: min(22rem, 100%);
+}
+
+.loginEyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.loginTitle {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-size: 2rem;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.4rem;
+}
+
+.loginLead {
+  margin: 0 0 1.75rem;
+  color: var(--muted);
+}
+
+.form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.92rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid rgba(42, 35, 35, 0.18);
+  border-radius: 0.4rem;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--ink);
+  font: inherit;
+}
+
+.input:focus {
+  outline: 2px solid rgba(42, 35, 35, 0.28);
+  outline-offset: 1px;
+}
+
+.submit {
+  appearance: none;
+  border: 0;
+  border-radius: 0.4rem;
+  padding: 0.8rem 1rem;
+  background: var(--ink);
+  color: #f7f3ee;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.submit:hover {
+  opacity: 0.9;
+}
+
+.submit:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+
+.error {
+  margin: 0;
+  color: #8a3a32;
+  font-size: 0.92rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
+  gap: 1rem;
+  margin: 1.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.45rem;
+  min-height: 12.5rem;
+  padding: 1.35rem 1rem 1.15rem;
+  border: 1px solid rgba(42, 35, 35, 0.12);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.55);
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.tile:hover {
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(42, 35, 35, 0.22);
+  transform: translateY(-2px);
+}
+
+.tileIcon {
+  display: grid;
+  place-items: center;
+  width: 5.5rem;
+  height: 5.5rem;
+  margin-bottom: 0.45rem;
+  border-radius: 1.35rem;
+  background: rgba(42, 35, 35, 0.06);
+  color: var(--ink);
+}
+
+.tileIcon svg {
+  width: 3.35rem;
+  height: 3.35rem;
+}
+
+.tileTitle {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.tileMeta {
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.35;
+  max-width: 12rem;
+}
+
+.pageTitle {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
+}
+
+.pageLead {
+  margin: 0;
+  color: var(--muted);
+  max-width: 36rem;
+}

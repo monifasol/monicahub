@@ -107,7 +107,7 @@ export default function Writing() {
           <br />
           Below you can find a selection of my personal writing,
           and if you want to read more, I host them all under
-          my <a className={sharedStyles.link} href="https://medium.com/@monifasol">Medium profile</a>,
+          my <a className={sharedStyles.link} href="https://medium.com/@monifasol" target="_blank" rel="noopener noreferrer">Medium profile</a>,
           where I write regularly.
         </BoxDescription>
 
