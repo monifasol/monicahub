@@ -11,3 +11,4 @@ La guía completa (ambas apps, variables, Blob, contraseñas, checklist) está e
 1. **`next.config.mjs`** — `rewrites` en `beforeFiles` hacia `SEEKLIENT_ORIGIN`.
 2. **Vercel (MonicaHub)** — `SEEKLIENT_ORIGIN=https://<seeklient>.vercel.app` (sin barra final) + redeploy.
 3. **Lab** — `LAB_PASSWORD` protege `/lab/*` (incluida la entrada a Seeklient). La contraseña de la app Seeklient es otra: `SEEKLIENT_ACCESS_TOKEN` en el proyecto Seeklient.
+4. **Tile del Lab** — el enlace a `/lab/seeklient` debe ser un `<a>` (carga completa). `next/link` hace soft-nav y en producción no abre el rewrite externo.
