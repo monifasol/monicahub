@@ -29,10 +29,10 @@ export const metadata = {
 export default function LabIndexPage() {
   return (
     <LabShell wide>
+      <p className={styles.pageEyebrow}>Privado</p>
       <h1 className={styles.pageTitle}>Lab</h1>
       <p className={styles.pageLead}>
-        Escenarios y apps de prueba. Todo lo que cuelga de /lab está
-        protegido con contraseña.
+        Pruebas y mini apps solo para ti.
       </p>
       <ul className={styles.grid}>
         {EXPERIMENTS.map((item) => {

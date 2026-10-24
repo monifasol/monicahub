@@ -10,8 +10,8 @@ export default function BlablaTestPage() {
     <LabShell>
       <h1 className={styles.pageTitle}>Blablatest</h1>
       <p className={styles.pageLead}>
-        Si estás viendo esto tras el login, el gate de /lab funciona. Sustituye
-        o duplica esta carpeta para tus pruebas personales.
+        Página de ejemplo del lab. Sustituye o duplica esta carpeta para tus
+        pruebas personales.
       </p>
     </LabShell>
   );
