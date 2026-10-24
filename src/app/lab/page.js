@@ -5,10 +5,10 @@ import styles from "./lab.module.css";
 
 const EXPERIMENTS = [
   {
-    href: "/lab/blablatest",
-    title: "Blablatest",
-    meta: "Página de ejemplo del lab.",
-    icon: "blablatest",
+    href: "/lab/propotyping",
+    title: "Propotyping",
+    meta: "Prototipos y pruebas de interfaz.",
+    icon: "propotyping",
     // Página del Hub → navegación cliente OK
     externalRewrite: false,
   },
