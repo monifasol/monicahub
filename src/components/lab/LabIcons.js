@@ -13,17 +13,12 @@ const stroke = {
   strokeLinejoin: "round",
 };
 
-function IconBlablatest(props) {
+function IconPropotyping(props) {
   return (
     <svg {...base} {...props} aria-hidden="true">
-      <path
-        {...stroke}
-        d="M12 22.5c0-5.5 5.4-10 12-10h6c6.6 0 12 4.5 12 10s-5.4 10-12 10h-3.2L22 38.5V32.2c-6 0-10-4.3-10-9.7Z"
-      />
-      <path
-        {...stroke}
-        d="M34 34.5c.8 5.2 5.8 9 12.2 9H49L54 50v-5.5c4.4-.8 7.5-4.4 7.5-8.8 0-4.2-2.6-7.7-6.4-9"
-      />
+      <rect {...stroke} x="12" y="10" width="28" height="36" rx="4" />
+      <rect {...stroke} x="24" y="18" width="28" height="36" rx="4" />
+      <path {...stroke} d="M30 28h16M30 36h11" />
     </svg>
   );
 }
@@ -40,7 +35,7 @@ function IconSeeklient(props) {
 }
 
 const ICONS = {
-  blablatest: IconBlablatest,
+  propotyping: IconPropotyping,
   seeklient: IconSeeklient,
 };
 
