@@ -6,11 +6,13 @@ import styles from "@/app/lab/lab.module.css";
 export default function LabShell({ children, wide = false }) {
   return (
     <div className={wide ? `${styles.shell} ${styles.shellWide}` : styles.shell}>
-      <header className={styles.topBar}>
-        <p className={styles.brand}>
-          <Link href="/lab">Lab</Link>
-        </p>
-      </header>
+      {wide ? null : (
+        <header className={styles.topBar}>
+          <p className={styles.brand}>
+            <Link href="/lab">Lab</Link>
+          </p>
+        </header>
+      )}
       {children}
     </div>
   );

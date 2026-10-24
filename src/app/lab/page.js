@@ -29,11 +29,13 @@ export const metadata = {
 export default function LabIndexPage() {
   return (
     <LabShell wide>
-      <p className={styles.pageEyebrow}>Privado</p>
-      <h1 className={styles.pageTitle}>Lab</h1>
-      <p className={styles.pageLead}>
-        Pruebas y mini apps solo para ti.
-      </p>
+      <header className={styles.pageHead}>
+        <p className={styles.pageEyebrow}>Privado</p>
+        <h1 className={styles.pageTitle}>Lab</h1>
+        <p className={styles.pageLead}>
+          Pruebas y mini apps solo para ti.
+        </p>
+      </header>
       <ul className={styles.grid}>
         {EXPERIMENTS.map((item) => {
           const className = styles.tile;
