@@ -41,7 +41,8 @@ export function visitorConfirmationEmail({ name, message }) {
                 Gracias por escribir
               </h1>
               <p style="margin:0 0 22px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;font-size:16px;line-height:1.6;color:#6E6161;">
-                Hola ${safeName}, he recibido tu mensaje. Te respondo pronto.
+                Hola ${safeName}, qué bien que hayas escrito.<br>
+                ¡Te respondo pronto!
               </p>
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#FFF8F4;border-radius:14px;border:1px solid rgba(201,143,145,0.28);">
                 <tr>
