@@ -1,21 +1,14 @@
-import { Resend } from "resend";
 import {
   visitorConfirmationEmail,
   ownerNotificationEmail,
 } from "@/lib/contactEmails";
+import { ForwardEmailError, sendEmail } from "@/lib/forwardEmail";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const DEFAULT_TO = "moni.sm@gmail.com";
+const DEFAULT_FROM = "Mónica Saiz <hola@monicasaiz.com>";
 
 export async function POST(request) {
   try {
-    if (!process.env.RESEND_API_KEY) {
-      console.error("RESEND_API_KEY is missing");
-      return Response.json(
-        { success: false, error: "not_configured" },
-        { status: 500 }
-      );
-    }
-
     const body = await request.json();
     const name = String(body?.name || "").trim();
     const email = String(body?.email || "").trim();
@@ -28,13 +21,10 @@ export async function POST(request) {
       );
     }
 
-    const to = process.env.CONTACT_TO_EMAIL || "moni.sm@gmail.com";
-    const from =
-      process.env.CONTACT_FROM_EMAIL ||
-      "Mónica Saiz <hola@vecinadigital.com>";
+    const to = process.env.CONTACT_TO_EMAIL || DEFAULT_TO;
+    const from = process.env.CONTACT_FROM_EMAIL || DEFAULT_FROM;
 
-    // 1. Email para mí
-    const toMe = await resend.emails.send({
+    const toMe = await sendEmail({
       from,
       to,
       replyTo: email,
@@ -42,13 +32,7 @@ export async function POST(request) {
       html: ownerNotificationEmail({ name, email, message }),
     });
 
-    if (toMe.error) {
-      console.error("Resend error (to me):", toMe.error);
-      return Response.json({ success: false, error: toMe.error }, { status: 502 });
-    }
-
-    // 2. Copia para el visitante
-    const toUser = await resend.emails.send({
+    await sendEmail({
       from,
       to: email,
       replyTo: to,
@@ -56,16 +40,24 @@ export async function POST(request) {
       html: visitorConfirmationEmail({ name, message }),
     });
 
-    if (toUser.error) {
-      console.error("Resend error (to user):", toUser.error);
+    return Response.json({ success: true, id: toMe.id });
+  } catch (error) {
+    if (error instanceof ForwardEmailError && error.code === "not_configured") {
+      console.error("FORWARDEMAIL_API_TOKEN is missing");
       return Response.json(
-        { success: false, error: toUser.error },
+        { success: false, error: "not_configured" },
+        { status: 500 }
+      );
+    }
+
+    if (error instanceof ForwardEmailError) {
+      console.error("Forward Email error:", error.status, error.message);
+      return Response.json(
+        { success: false, error: "send_failed" },
         { status: 502 }
       );
     }
 
-    return Response.json({ success: true, id: toMe.data?.id });
-  } catch (error) {
     console.error("Contact API error:", error);
     return Response.json(
       { success: false, error: "server_error" },
