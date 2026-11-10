@@ -1,0 +1,495 @@
+.creator-college {
+  --bg: #f4f1ea;
+      --paper: #fffcf7;
+      --ink: #1c1915;
+      --muted: #5e584e;
+      --faint: #8a8276;
+      --line: #e4ddd2;
+      --accent: #1e4a38;
+      --accent-soft: #e7f0eb;
+      --warn: #7a4e0d;
+      --warn-bg: #f8f0df;
+      --warn-line: #e2c48a;
+      --gap-row: #fbf6ec;
+}
+
+.creator-college, .creator-college * {
+  box-sizing: border-box;
+}
+
+.creator-college {
+  scroll-behavior: smooth;
+}
+
+.creator-college {
+  min-height: 100vh;
+  margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.5 "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+}
+
+.creator-college .wrap {
+  max-width: 1080px; margin: 0 auto; padding: 28px 20px 80px;
+}
+
+.creator-college header.page {
+  margin-bottom: 18px;
+}
+
+.creator-college h1 {
+  font-size: 28px; line-height: 1.15; font-weight: 600; margin: 0 0 8px; letter-spacing: -0.02em;
+}
+
+.creator-college h2 {
+  font-size: 22px; line-height: 1.2; font-weight: 600; margin: 0 0 8px;
+}
+
+.creator-college h3 {
+  font-size: 16px; line-height: 1.3; font-weight: 600; margin: 22px 0 8px;
+}
+
+.creator-college p {
+  margin: 0 0 10px;
+}
+
+.creator-college .lede {
+  font-size: 17px;
+}
+
+.creator-college .small {
+  font-size: 14px; color: var(--muted);
+}
+
+.creator-college .faint {
+  font-size: 13px; color: var(--faint);
+}
+
+.creator-college a {
+  color: var(--accent);
+}
+
+.creator-college nav.days {
+  position: sticky;
+      top: 0;
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 12px 0;
+      background: var(--bg);
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 22px;
+}
+
+.creator-college nav.days button {
+  font: 13px/1 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 7px 12px;
+      cursor: pointer;
+}
+
+.creator-college nav.days button[aria-current="true"] {
+  background: var(--accent);
+      color: #f7f4ee;
+      border-color: var(--accent);
+}
+
+.creator-college section[hidden] {
+  display: none;
+}
+
+.creator-college .grid {
+  display: grid; gap: 12px;
+}
+
+.creator-college .g5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.creator-college .g4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.creator-college .g3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.creator-college .g2 {
+  grid-template-columns: 1.15fr 1fr;
+}
+
+.creator-college .card {
+  background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      min-width: 0;
+}
+
+.creator-college .kicker {
+  display: block;
+      font: 600 11px/1.2 ui-sans-serif, -apple-system, sans-serif;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 6px;
+}
+
+.creator-college .card strong {
+  display: block; margin-bottom: 6px;
+}
+
+.creator-college .card p:last-child {
+  margin-bottom: 0;
+}
+
+.creator-college .flow {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 8px 0 4px;
+}
+
+.creator-college .chip {
+  font: 13px/1 ui-sans-serif, -apple-system, sans-serif;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      border-radius: 999px;
+      padding: 6px 10px;
+}
+
+.creator-college .chip.on {
+  background: var(--accent-soft); border-color: #b7d0c4; color: var(--accent);
+}
+
+.creator-college .arrow {
+  color: var(--faint); font-family: ui-sans-serif, sans-serif;
+}
+
+.creator-college .stats {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px;
+}
+
+.creator-college .stat {
+  background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+}
+
+.creator-college .stat b {
+  display: block; font-size: 22px; font-weight: 600;
+}
+
+.creator-college .stat span {
+  font: 13px/1.3 ui-sans-serif, -apple-system, sans-serif; color: var(--muted);
+}
+
+.creator-college .callout {
+  border: 1px solid var(--warn-line);
+      background: var(--warn-bg);
+      color: var(--warn);
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin: 12px 0;
+}
+
+.creator-college .callout strong {
+  display: block; margin-bottom: 4px;
+}
+
+.creator-college .note {
+  border: 1px solid var(--line);
+      background: var(--paper);
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin: 12px 0;
+}
+
+.creator-college .note strong {
+  display: block; margin-bottom: 4px;
+}
+
+.creator-college hr {
+  border: 0; border-top: 1px solid var(--line); margin: 22px 0;
+}
+
+.creator-college .scroll {
+  overflow-x: auto; margin: 8px 0 12px;
+}
+
+.creator-college table {
+  width: 100%; border-collapse: collapse; font-size: 14px; background: var(--paper);
+}
+
+.creator-college th,
+.creator-college td {
+  text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line);
+}
+
+.creator-college th {
+  font: 600 12px/1.3 ui-sans-serif, -apple-system, sans-serif;
+      color: var(--muted);
+      background: #faf7f2;
+}
+
+.creator-college tr.warn td {
+  background: var(--gap-row);
+}
+
+.creator-college .src {
+  font: 13px/1.45 ui-sans-serif, -apple-system, sans-serif; color: var(--faint);
+}
+
+.creator-college .sources {
+  font-size: 12px;
+  line-height: 1.4;
+  max-width: 68ch;
+}
+
+.creator-college .diagram {
+  margin: 14px 0 18px;
+  padding: 14px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.creator-college .diagram figcaption {
+  margin: 0 0 12px;
+  font: 12px/1.4 ui-sans-serif, -apple-system, sans-serif;
+  color: var(--muted);
+}
+
+.creator-college .funnel-layout {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr) 92px;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.creator-college .rail {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font: 11px/1.3 ui-sans-serif, -apple-system, sans-serif;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+.creator-college .rail-dir {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.creator-college .funnel ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.creator-college .funnel li {
+  width: var(--w);
+  margin: 0 auto;
+  padding: 10px 14px;
+  text-align: center;
+  background: var(--accent-soft);
+  border: 1px solid #c5ddd0;
+  border-radius: 6px;
+}
+
+.creator-college .funnel li strong,
+.creator-college .cell strong {
+  display: block;
+  font-size: 14px;
+}
+
+.creator-college .funnel li span,
+.creator-college .cell span,
+.creator-college .cell em {
+  display: block;
+  margin-top: 2px;
+  font: 13px/1.35 ui-sans-serif, -apple-system, sans-serif;
+}
+
+.creator-college .funnel li:nth-child(2) { background: #dceadf; }
+.creator-college .funnel li:nth-child(3) { background: #c9dfd2; }
+.creator-college .funnel-last {
+  background: var(--accent);
+  color: #f7f4ee;
+  border-color: var(--accent);
+}
+
+.creator-college .arc-bar {
+  display: flex;
+  min-height: 64px;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+}
+
+.creator-college .arc-bar span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px 4px;
+  font: 600 13px/1.25 ui-sans-serif, -apple-system, sans-serif;
+}
+
+.creator-college .arc-problem { background: #5e584e; color: #f7f4ee; }
+.creator-college .arc-pursuit { background: var(--accent); color: #f7f4ee; }
+.creator-college .arc-payoff { background: var(--accent-soft); color: var(--ink); }
+
+.creator-college .matrix-board {
+  display: grid;
+  grid-template-columns: 108px 1fr 1fr;
+  gap: 8px;
+}
+
+.creator-college .axis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font: 600 12px/1.3 ui-sans-serif, -apple-system, sans-serif;
+  color: var(--muted);
+}
+
+.creator-college .cell {
+  padding: 10px 12px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.creator-college .cell.gap {
+  background: var(--warn-bg);
+  border-color: var(--warn-line);
+}
+
+.creator-college .cell em {
+  color: var(--warn);
+  font-style: normal;
+}
+
+.creator-college .mix-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+  margin: 0 0 12px;
+  padding: 0;
+  list-style: none;
+  font: 12px/1 ui-sans-serif, -apple-system, sans-serif;
+  color: var(--muted);
+}
+
+.creator-college .mix-legend li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.creator-college .mix-legend i,
+.creator-college .mix-bar i {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid #c5ddd0;
+}
+
+.creator-college .mix-a { background: var(--accent-soft); }
+.creator-college .mix-n { background: #dceadf; }
+.creator-college .mix-p { background: #c9dfd2; }
+.creator-college .mix-c { background: var(--accent); border-color: var(--accent); }
+
+.creator-college .mix-row {
+  display: grid;
+  grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.creator-college .mix-row p {
+  margin: 0;
+}
+
+.creator-college .mix-row span {
+  display: block;
+  margin-top: 2px;
+  font: 12px/1.35 ui-sans-serif, -apple-system, sans-serif;
+  color: var(--muted);
+}
+
+.creator-college .mix-bar {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 4px;
+}
+
+.creator-college .mix-bar i {
+  width: auto;
+  height: 28px;
+}
+
+.creator-college .mix-gap .mix-bar i {
+  background: var(--warn-bg);
+  border: 1px dashed var(--warn-line);
+}
+
+.creator-college .mix-gap span {
+  color: var(--warn);
+}
+
+@media (max-width: 860px) {
+.creator-college .g5,
+.creator-college .g4,
+.creator-college .g3,
+.creator-college .g2,
+.creator-college .stats {
+  grid-template-columns: 1fr;
+}
+
+.creator-college h1 {
+  font-size: 24px;
+}
+
+.creator-college .funnel-layout {
+  grid-template-columns: 64px minmax(0, 1fr) 64px;
+}
+
+.creator-college .mix-row {
+  grid-template-columns: 1fr;
+}
+
+}
+
+@media print {
+.creator-college nav.days {
+  display: none;
+}
+
+.creator-college section[hidden] {
+  display: block;
+}
+
+.creator-college {
+  background: white;
+}
+
+.creator-college .card,
+.creator-college .stat,
+.creator-college table {
+  break-inside: avoid;
+}
+
+}
