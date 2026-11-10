@@ -38,7 +38,7 @@ export const diagrams = {
 
   shan: `
 <figure class="diagram matrix">
-  <figcaption>Oferta y embudo según audiencia (corte 50.000) y skill. La celda grande y skill alta no trae el reparto de posts ni la definición de «rule of 10».</figcaption>
+  <figcaption>Oferta y embudo según audiencia (corte 50.000) y skill. En la celda grande y skill alta hay dos stickies que dicen «rule of 10»; la pizarra no lo define, y tampoco está el reparto de 7 posts.</figcaption>
   <div class="matrix-board shan-board">
     <div class="axis corner">Audiencia ↓<br>Skill →</div>
     <div class="axis">Skill baja</div>
@@ -46,7 +46,7 @@ export const diagrams = {
     <div class="axis">Grande<br>+50.000</div>
     <div class="cell">
       <strong>Creator</strong>
-      <span>Low-ticket y contenido. Jun hacia 2023, unos 700.000.</span>
+      <span>Low-ticket y contenido. Jun hacia 2023, unos 700.000. Ejemplo: 5 ways to get your baby to sleep in 10 mins, 99 $. Build in public, upsells, ads, emails. Alex Hormozi, Gary V.</span>
     </div>
     <div class="cell gap">
       <strong>Business owner</strong>
@@ -56,11 +56,54 @@ export const diagrams = {
     <div class="axis">Pequeña<br>0–50.000</div>
     <div class="cell">
       <strong>Nada que vender</strong>
-      <span>Lead magnet con journey POV. Marcas y afiliados.</span>
+      <span>Estudiantes, part-time. Nothing to sell. Lead magnet con journey POV, construir el producto, marcas y afiliados.</span>
     </div>
     <div class="cell">
       <strong>Coach</strong>
-      <span>High-ticket, 1–10.000 $. DM, llamadas, luego grupo. @makenzieco, 12.000.</span>
+      <span>Sold 100.000 $+ de tu skill, o contenido que engancha. High-ticket, 1–10.000 $. DM, llamadas, 1-1 y luego grupo. @makenzieco, 12.000.</span>
+    </div>
+  </div>
+</figure>`,
+
+  mix: `
+<figure class="diagram mix">
+  <figcaption>Reparto de Jun para los próximos 7 posts. Corte de audiencia: 50.000. La fila de audiencia grande y skill alta no trae números.</figcaption>
+  <ul class="mix-legend">
+    <li><i class="mix-a"></i>Attract</li>
+    <li><i class="mix-n"></i>Nurture</li>
+    <li><i class="mix-p"></i>Position</li>
+    <li><i class="mix-c"></i>Convert</li>
+  </ul>
+  <div class="mix-row">
+    <p><strong>Pequeña, skill baja</strong><span>No offer. Primero atraer.</span></p>
+    <div class="mix-bar" role="img" aria-label="4 Attract, 1 Nurture, 2 Position, 0 Convert">
+      <i class="mix-a"></i><i class="mix-a"></i><i class="mix-a"></i><i class="mix-a"></i>
+      <i class="mix-n"></i>
+      <i class="mix-p"></i><i class="mix-p"></i>
+    </div>
+  </div>
+  <div class="mix-row">
+    <p><strong>Pequeña, skill alta</strong><span>La slide de oferta no está. El reparto sí.</span></p>
+    <div class="mix-bar" role="img" aria-label="3 Attract, 1 Nurture, 2 Position, 1 Convert">
+      <i class="mix-a"></i><i class="mix-a"></i><i class="mix-a"></i>
+      <i class="mix-n"></i>
+      <i class="mix-p"></i><i class="mix-p"></i>
+      <i class="mix-c"></i>
+    </div>
+  </div>
+  <div class="mix-row">
+    <p><strong>Grande, skill baja</strong><span>Low-ticket. Creative first.</span></p>
+    <div class="mix-bar" role="img" aria-label="2 Attract, 1 Nurture, 3 Position, 1 Convert">
+      <i class="mix-a"></i><i class="mix-a"></i>
+      <i class="mix-n"></i>
+      <i class="mix-p"></i><i class="mix-p"></i><i class="mix-p"></i>
+      <i class="mix-c"></i>
+    </div>
+  </div>
+  <div class="mix-row mix-gap">
+    <p><strong>Grande, skill alta</strong><span>Hueco. Shan describe la oferta, no estos números.</span></p>
+    <div class="mix-bar" role="img" aria-label="Reparto no capturado">
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
     </div>
   </div>
 </figure>`,
@@ -79,7 +122,7 @@ export const diagrams = {
     </div>
     <div class="cell">
       <strong>Alta + alta</strong>
-      <span>@creatorcollege_: daily, weekly, monthly. @itserinconfortini: Financial Mistakes I Made.</span>
+      <span>@creatorcollege_: daily, weekly, monthly. Thumbnails de 48 viral storytelling hooks, batch y experimentación. @itserinconfortini: Financial Mistakes I Made, rótulo a millionaire, cortes a otros planos.</span>
     </div>
     <div class="axis">Expertise<br>baja</div>
     <div class="cell gap">

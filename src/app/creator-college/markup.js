@@ -39,7 +39,7 @@ export const markup = `
 
       <div class="grid g3" style="margin-top:14px">
         <article class="card"><span class="kicker">Día 1</span><strong>Tres pilares</strong><p class="small">Skills: lo que alguien puede aprender de ti. Passions: en qué te gastas el dinero y quién le da sentido. Story: cómo llegaste y qué creías antes. Ir unos pasos por delante basta.</p></article>
-        <article class="card"><span class="kicker">Día 3</span><strong>Cuatro misiones</strong><p class="small">Attract trae gente nueva. Nurture profundiza la conexión. Position construye autoridad. Convert vuelve la atención ingreso. Trust y depth of value bajan por el embudo.</p></article>
+        <article class="card"><span class="kicker">Día 3</span><strong>Cuatro misiones</strong><p class="small">De la gente nueva al ingreso. El embudo está debajo.</p></article>
         <article class="card"><span class="kicker">Día 2</span><strong>Tres formatos</strong><p class="small">Talking: confianza. Non-talking: parar el scroll y views. Carrusel: enseñar y saves. Anatomía: Format, Hook, Value, Re-hooks. Roba el formato, no el mensaje.</p></article>
       </div>
       <div data-diagram="funnel"></div>
@@ -252,7 +252,7 @@ export const markup = `
           </tbody>
         </table>
       </div>
-      <p class="small">El formato de Jun, fotos antiguas y texto: 25 M, 653 K, 1,7 M, 4,1 M, 7,2 M, 1,7 M. Ganchos: «2013: and my mom left for Korea without a goodbye» y «2013: Parents divorced abruptly». Cadence: música de anticipación y cada línea legible. Arco en líneas: problema 7, pursuit 7, payoff 5.</p>
+      <p class="small">El formato de Jun, fotos antiguas y texto: 25 M, 653 K, 1,7 M, 4,1 M, 7,2 M, 1,7 M. Ganchos: «2013: and my mom left for Korea without a goodbye» y «2013: Parents divorced abruptly». Cadence: música de anticipación y cada línea legible.</p>
       <div data-diagram="arc"></div>
       <div class="scroll">
         <table>
@@ -341,13 +341,7 @@ export const markup = `
       <h2>Viernes 23, desde las 21:40 · cuatro misiones</h2>
       <p>What do you want to do for yourself and people around you? Cada post es una misión. La mayoría salta a «Buy my thing!» antes de tener atención, confianza y autoridad.</p>
       <div data-diagram="funnel"></div>
-      <div class="grid g4">
-        <article class="card"><span class="kicker">1</span><strong>Attract</strong><p class="small">Atención y gente nueva. I've discovered a new creator. Follow.</p></article>
-        <article class="card"><span class="kicker">2</span><strong>Nurture</strong><p class="small">Confianza y conexión. I feel deeply connected with this person.</p></article>
-        <article class="card"><span class="kicker">3</span><strong>Position</strong><p class="small">Autoridad. I trust this person and what they say.</p></article>
-        <article class="card"><span class="kicker">4</span><strong>Convert</strong><p class="small">Ingreso. I'm going to buy what they're selling.</p></article>
-      </div>
-      <p class="small">The Content Funnel baja de Attract a Convert. Por la izquierda, trust. Por la derecha, depth of value. Si saltas de Attract a Convert: veo el producto, no confío, no compro. Creces y no monetizas.</p>
+      <p class="small">Si saltas de Attract a Convert: veo el producto, no confío, no compro. Creces y no monetizas.</p>
 
       <h3>Qué publicar en cada misión</h3>
       <div class="scroll">
@@ -393,17 +387,7 @@ export const markup = `
       </div>
 
       <h3>Los próximos 7 posts. Corte: 50.000 seguidores</h3>
-      <div class="scroll">
-        <table>
-          <thead><tr><th>Perfil</th><th>Oferta</th><th>Attract</th><th>Nurture</th><th>Position</th><th>Convert</th></tr></thead>
-          <tbody>
-            <tr><td>Audiencia pequeña, skill baja</td><td>No offer. Primero atraer.</td><td>4</td><td>1</td><td>2</td><td>0</td></tr>
-            <tr><td>Audiencia pequeña, skill alta</td><td>La slide de oferta no está. El reparto sí.</td><td>3</td><td>1</td><td>2</td><td>1</td></tr>
-            <tr><td>Audiencia grande, skill baja</td><td>Low-ticket. Creative first.</td><td>2</td><td>1</td><td>3</td><td>1</td></tr>
-            <tr class="warn"><td>Audiencia grande, skill alta</td><td>El reparto de Jun no está. Shan describe la oferta, no estos números.</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-          </tbody>
-        </table>
-      </div>
+      <div data-diagram="mix"></div>
     </section>
 
     <section id="d4" hidden>
@@ -418,26 +402,8 @@ export const markup = `
       </div>
 
       <h3>Matriz de Shan. Audiencia por 50.000, por skill</h3>
-      <p class="small">What offer and funnel you should be using. En grande y skill baja se reconoce a Jun hacia 2023, unos 700.000. En pequeña y skill alta, @makenzieco con 12.000.</p>
+      <p class="small">What offer and funnel you should be using.</p>
       <div data-diagram="shan"></div>
-      <div class="scroll">
-        <table>
-          <thead><tr><th></th><th>Skill baja</th><th>Skill alta</th></tr></thead>
-          <tbody>
-            <tr>
-              <td>Audiencia grande, +50.000</td>
-              <td>Creator. Low-ticket y contenido. 5 ways to get your baby to sleep in 10 mins, 99 $. Build in public, launch plan, upsells, ads, lead magnet, emails. Alex Hormozi, Gary V.</td>
-              <td>Business owner y creator. Shan se coloca aquí. High-ticket. Lead magnet y book a call.</td>
-            </tr>
-            <tr>
-              <td>Audiencia pequeña, 0–50.000</td>
-              <td>Estudiantes, part-time. Nothing to sell. Lead magnet con journey POV, construir el producto, marcas y afiliados.</td>
-              <td>Business owners / coach. Sold 100.000 $+ de tu skill, o contenido educativo que engancha. Lead magnet, DM, llamadas, high-ticket 1–10.000 $, 1-1 y luego grupo.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="callout"><strong>Hueco · rule of 10</strong>Hay dos stickies que dicen «rule of 10». La pizarra no define qué es. Esta celda de oferta (grande y skill alta) sí está. Los cuatro números de posts de Jun para esa celda no.</div>
       <p class="small">Notas sueltas del cuadrante pequeña y skill alta: un curso de sleep training a 3.000 $; 30.000 $ a 600.000 $; 20.000 emails; 8.000–15.000 $ a coaching de negocio; 4 ventas; más de 1.000 puntos de contacto, mejor.</p>
 
       <div class="grid g3">
@@ -659,17 +625,8 @@ export const markup = `
       <p class="small">Workflow: recortar, B-roll, texto, subtítulos, efectos de sonido, música, verlo entero. Checklist: tiempo muerto, subtítulos legibles, ritmo, cada corte aporta, audio equilibrado.</p>
 
       <h3>Edición por expertise</h3>
-      <p class="small">Eje vertical, más expertise. Eje horizontal, mejor edición. No matter where you find yourself, you can still win. Dijo que daría 2 formatos por cuadrante.</p>
+      <p class="small">Eje vertical, más expertise. Eje horizontal, mejor edición. No matter where you find yourself, you can still win.</p>
       <div data-diagram="edit"></div>
-      <div class="scroll">
-        <table>
-          <thead><tr><th></th><th>Edición baja</th><th>Edición alta</th></tr></thead>
-          <tbody>
-            <tr class="warn"><td>Expertise alta</td><td>Nombrado. Sin ejemplo en las capturas.</td><td>@creatorcollege_: calendario daily / weekly / monthly. Thumbnails de 48 viral storytelling hooks, batch y experimentación. @itserinconfortini: Financial Mistakes I Made, rótulo a millionaire, cortes a otros planos.</td></tr>
-            <tr class="warn"><td>Expertise baja</td><td>Nombrado. Sin ejemplo.</td><td>Nombrado. Sin ejemplo.</td></tr>
-          </tbody>
-        </table>
-      </div>
 
       <h3>VIP, el cierre</h3>
       <p class="small">One system. Four weeks. Same steps, every single week. Al entrar, mapear skills y asignar coach y grupo. Strategy lesson, Create, Post it, Get feedback. Semana 1, qué publicar. Semana 2, crearlo más rápido. Semana 3, de views a clientas. Semana 4, escalarlo.</p>
